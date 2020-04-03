@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="back"><a href="../../index.html">Go Back</a></div>
+
+        <div class="main">
+
+            <div class="title"><h1>Todo list</h1></div>
+
+            <div class="addNew">
+                <input type="text" id="myInput" placeholder="Add a todo">
+                <span onclick="newElement()" class="addBtn">ADD</span>
+            </div> 
+
+            <div class="taskBoard" id="taskBoard">
+                <ul id="list">
+                    <!--<li>
+                        <input type="checkbox" class="checkbox2">
+                        <span class="task">Coursesmmmm</span>
+                        <span class="delete" onclick="closeTab()">x</span>
+                    </li>-->
+                </ul>
+            </div>
+
+            <button type="button" id="clear">Clear All</button>
+
+        </div>
+        <script type="text/javascript" src="app.js"></script>
+
+    </body>
+</html>

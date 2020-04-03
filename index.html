@@ -3,11 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Projects</title>
 </head>
 <body>
+    
+    <header>
+        Projects
+        <div class="header-bar"></div>
+    </header>
 
-    <h1>Notre équipe</h1>
-   
+    <div>
+    <nav>
+        <ul>
+            <li class="selected"><a href="#all">All</a></li>
+            <li><a href="#js">Javascript</a></li>
+            <li><a href="#python">Python</a></li>
+        </ul>
+    </nav>
+
+    <!--<div class="grid-item" * Catégorie à ajouter : "all" and "js" or "python"> -->
+    <div class="grid-container">
+        <div class="grid-item all js">
+            <div class="info_none">
+            <p class="p_info">Todo list App</p>
+            <p class="p_pink">Vanilla Javascript</p>
+            <a href=projects/todo/index.html class="a_info">Take a look</a>
+            </div>
+            <img src="img/todo.jpg">
+        </div>
+
+        <div class="grid-item all js">
+            <div class="info_none">
+            <p class="p_info">Website Homepage</p>
+            <p class="p_pink">jQuery / Responsive</p>
+            <a href=projects/kinn/home.html class="a_info">Take a look</a>
+            </div>
+        <img src="img/kinn.jpg">
+        </div>  
+
+        <div class="grid-item all ">
+            <div class="info_none">
+            <p class="p_info">Coming soon</p>
+            <p class="p_pink"></p>
+            <!--<a href=# class="a_info">Take a look</a>-->
+            </div>
+        <img src="img/soon.jpg">
+        </div>
+
+    </div>
+    </div>
+
+        <script type="text/javascript" src="app.js"></script>
+            
 </body>
 </html>

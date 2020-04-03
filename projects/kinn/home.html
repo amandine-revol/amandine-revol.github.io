@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="back"><a href="../../index.html">Go Back</a></div>
+
+        <header>
+            <h1>KINN</h1>
+            <span class="logo"><img src="apple.png"/></span>
+            <!--<div class="search_img"><img src="search.png"/></div>-->
+            <span class="search white">
+                <span class="input"></span>
+                <img class="s_img" src="search.png"/>
+            </span>
+        </header>
+
+        <nav>
+            <div class="menu-toggle">
+                <div class="hamburger">
+                     <a href="#" class="icon"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li class="login"><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+        
+        <div id="page-mask"></div>
+        
+        <div class="loginform">
+            <div style="display:inline-block;">
+            <form method= "post" action="">
+                <h3>Login to access your account</h3>
+                <input type="image" id="close_login" src="close.png">
+                <input type="text" id="login" placeholder="Login">
+                <input type="text" id="email" placeholder="Email">
+                <input type="submit" id="dologin">
+            </form>
+            </div>
+        </div>
+
+        <!--slideshow-->
+        <div class="slideshow">
+            <div>
+            <div class="slides activate">
+                <div class="numbertext">1 / 3 </div>
+                <img src="love.png"/>
+                 <!--<div class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>-->
+            </div>
+
+            <div class="slides">
+                <div class="numbertext">2 / 3 </div>
+                <img src="heart.png"/>
+                 <!--<div class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>-->
+            </div>
+
+            <div class="slides">
+                <div class="numbertext">3 / 3 </div>
+                <img src="love.png"/>
+                 <!--<div class="slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>-->
+            </div>
+            </div>
+            <!--next and previous-->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+        <br>
+            
+
+        <div class="main">
+            <h2>KINN, the number one health insurance in Switzerland</h2>
+
+            <div class="imgs-container">
+                <div class="img-container">
+                    <div class="img_cont">
+                        <span class="img_txt">Suspendisse maximus</span>
+                        <img class="img-def" src="green.jpg"/>
+                    </div>
+                    <span class="img_info">
+                        <p class="bold">Lorem ipsum dolor sit amet</p>
+                        <p>Consectetur adipiscing elit.
+                        Quisque rhoncus lobortis metus, malesuada convallis dolor porta eget.
+                        Suspendisse ultrices, neque non tristique varius, dui odio ornare dolor, 
+                        ac imperdiet risus nunc id mi.
+                        </p>
+                        <p class="teal"><a href="#">Cras vitae nulla</a></p>
+                    </span>
+                </div>
+                <div class="img-container">
+                    <div class="img_cont">
+                        <span class="img_txt">Quisque rhoncus lobortis!</span>
+                        <img class="img-def" src="meds.jpg"/>
+                    </div>
+                    <span class="img_info">
+                        <p class="bold">Lorem ipsum dolor sit amet.</p>
+                        <p>Consectetur adipiscing elit.
+                        Quisque rhoncus isus nunc id mi. Vestibulum eu elit eu orci vulputate 
+                        eleifend eu id massa. Integer non augue eleifend, efficitur quam et,
+                         dictum dui.
+                        </p>
+                        <p class="teal"><a href="#">Integer tempus lectus</a></p>
+                    </span>
+                </div>
+                <div class="img-container">
+                <div class="img_cont">
+                    <span class="img_txt">Integer non augue</span>
+                    <img class="img-def" src="fight.jpg"/>
+                </div>
+                <span class="img_info">
+                    <p class="bold">Lorem ipsum dolor sit amet.</p>
+                    <p>Consectetur adipiscing elit.
+                    Quisque rhoncus lobortis metus, malesuada convallis dolor porta eget.
+                    Suspendisse ultrices, estibulum eu elit eu orci vulputate 
+                    eleifend eu id massa. Integer non augue eleifend, efficitur quam et,
+                    dictum dui.
+                    </p>
+                    <p class="teal"><a href="#">Nunc sit amet orci</a></p>
+                </span>
+            </div>
+            </div>
+
+
+            <div class="content_onglet">
+                <ul class="tabs">
+                    <li><a href="#p1">Projet 1</a></li>
+                    <li><a href="#p2">Projet 2</a></li>
+                    <li><a href="#p3">Projet 3</a></li>
+                </ul>
+                <div class="tabs_content">
+                    <div id="p1" class="tab_content active">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus arcu risus, mollis eget posuere vehicula, dignissim sit amet risus. Mauris congue nunc sit amet erat viverra pretium. Cras nisl lacus, ultrices vel est sed, fermentum faucibus erat. Duis nec eros nisi. Vivamus tempus neque nec massa viverra porta. Phasellus non consequat eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer tempus lectus sit amet odio vehicula scelerisque. Nulla eleifend enim in ipsum aliquet dictum.</p>
+                        <br>
+                        <p>Nulla non nisl imperdiet, volutpat nisl at, aliquam leo. Nam ut dignissim ante. Integer eget odio nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum fringilla enim quis vulputate tempus</p>
+                        <br>
+                        <p class="teal"><a href="#">Nunc sit amet orci</a></p>
+                    </div>
+                    <div id="p2" class="tab_content">
+                        <p>Suspendisse maximus sit amet est id tincidunt. Nullam non elit sed nisl sodales auctor. Fusce varius iaculis urna, vel viverra orci faucibus in. Praesent metus mi, facilisis id turpis sagittis, porta maximus velit. Vestibulum metus metus, molestie ac nisl ac, varius mattis nisi. Curabitur vel accumsan eros. Phasellus suscipit tortor ut hendrerit semper.</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus arcu risus, mollis eget posuere vehicula, dignissim sit amet risus. Mauris congue nunc sit amet erat viverra pretium. Cras nisl lacus, ultrices vel est sed, fermentum faucibus erat. Duis nec eros nisi. Vivamus tempus neque nec massa viverra porta. Phasellus non consequat eros. Vestibulum ante ipsum primis in faucibus. Integer tempus lectus sit amet odio vehicula scelerisque. Nulla eleifend enim in ipsum aliquet dictum.</p>
+                        <br>
+                        <p class="teal"><a href="#">Nunc sit amet orci</a></p>
+                    </div>
+                    <div id="p3" class="tab_content">
+                        <p>Nam consectetur dictum odio vel porta. Vestibulum in metus sagittis, vestibulum est eget, tristique metus. Nullam vel odio fermentum turpis feugiat lobortis. Cras sagittis dui dui, quis tincidunt lorem aliquam nec. Nulla tortor elit, volutpat sit amet mattis sed, pellentesque a turpis. Nulla non nisl imperdiet, volutpat nisl at, aliquam leo. Nam ut dignissim ante. Integer eget odio nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum fringilla enim quis vulputate tempus.</p>
+                        <br>
+                        <p class="teal"><a href="#">Nunc sit amet orci</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <footer>
+            <div class="f1">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="f2">
+                <p>Subscribe to our newsletter :</p>
+                <input type="email" placeholder="vous@example.com">
+            </div>
+            <div class="f3">
+                <h1>KINN</h1>
+                <span class="logo"><img src="apple.png"/></span>
+            </div>
+            
+
+        </footer>
+
+        
+
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+
+</html>
