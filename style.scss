@@ -119,17 +119,22 @@ img {
 .container_project{
     @include website-size();
     margin-top:50px;
+    margin-bottom: 50px;
+
 }
 #container_home{
     @include website-size();
     margin-top:100px;
     padding: 0 30px;
+    margin-bottom: 150px;
 }
 #container_contact{
     max-width: 900px;
     margin: auto;
     margin-top:100px;
     padding: 0 30px;
+    margin-bottom: 50px;
+
 }
 .intro{
     text-align: center;
