@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>Revol Amandine Portfolio</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js"></script>
+    <!-- Add any other renderers you need; see Use Renderers for more information -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css" />
+
+    <!-- video, hide controls-->
+    <style>
+        .mejs__controls { visibility:hidden !important; }
+        .mejs__container { background: #f5f5f5 !important; }
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <div class="title"><a href="../index.html">Revol Amandine</a></div>
+          
+        <nav>
+            <a href="../index.html" class="active">Portfolio</a>
+            <a href="../resume.html">Resume</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+    </header>
+
+<div id="container_home">
+
+    <div class="container_project">
+        <!-- video-->
+        <div class="vtop_center">
+            <video width="896" height="687" class="mejs__player" autoplay muted loop>
+                <source type="video/mp4" src="img/wool_intro.mp4" />
+            </video>
+        </div>
+        <div class="project_info">
+            <h2>Wooly is an E-commerce mobile application. </h2>
+            <p class="f_lighter">
+                The goal of the app is to offer a smooth online shopping experience from the choice of the wool to the checkout process. 
+            </p>
+        </div>
+    </div>
+
+    <div class="wool_screens">
+        <img src="img/wool_screen.png">
+    </div>
+
+    <div class="container_project flex">
+        <!-- video-->
+        <div class="v_left">
+            <video width="364" height="629" class="mejs__player" preload="metadata" muted loop>
+                <source type="video/mp4" src="img/wool_productpage.mp4" />
+            </video>
+        </div>
+        <div class="project_info_left">
+            <h2>Product page </h2>
+            <p class="f_lighter">
+                Allows the customer to see the different colors of the product.
+                Product details expand to reveal information.
+            </p>
+        </div>
+    </div>
+
+    <div class="container_project flex">
+        <div class="project_info_left">
+            <h2>Navigation drawer </h2>
+            <p class="f_lighter">
+                Navigation drawers provide access to destinations in the app.
+                It's controlled by a navigation menu icon.
+            </p>
+        </div>
+        <!-- video-->
+        <div class="v_right">
+            <video width="364" height="629" class="mejs__player" preload="metadata" muted loop>
+                <source type="video/mp4" src="img/wool_nav.mp4" />
+            </video>
+        </div>
+    </div>
+
+    <div class="container_project flex">
+        <!-- video-->
+        <div class="v_left">
+            <video width="364" height="629" class="mejs__player" preload="metadata" muted loop>
+                <source type="video/mp4" src="img/checkout.mp4" />
+            </video>
+        </div>
+        <div class="project_info_left">
+            <h2>Add to cart and checkout </h2>
+            <p class="f_lighter">
+                Allows the customer to save items for a later purchase.
+                Checkout  does not require an account creation, checkout as a guest isat the top of the page to avoid
+                abandonment.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+

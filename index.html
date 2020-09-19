@@ -4,86 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Projects</title>
+    <title>Revol Amandine Portfolio</title>
 </head>
 <body>
     
     <header>
-        Projects
-        <div class="header-bar"></div>
+        <div class="title"><a href="index.html">Revol Amandine</a></div>
+          
+        <nav>
+            <a href="index.html" class="active">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <div>
-    <nav>
-        <ul>
-            <li class="selected"><a href="#all">All</a></li>
-            <li><a href="#js">Javascript</a></li>
-            <li><a href="#python">Python</a></li>
-            <li><a href="#design">Design</a></li>
-        </ul>
-    </nav>
-
-    <!--<div class="grid-item" * Catégorie à ajouter : "all" and "js" or "python"> -->
-    <div class="grid-container">
-        <div class="grid-item all design">
-            <div class="info_none">
-            <p class="p_info">Android eCommerce app</p>
-            <p class="p_pink">App design / UI / UX</p>
-            <a href="projects/wool/wool.html" class="a_info">Take a look</a>
-            </div>
-            <img src="img/wool.png">
+    <div id="container_home">
+        <div class="intro">
+            Hello, my name is Amandine Revol. <br>
+            A web designer from France now living in Zurich, Switzerland.
+        </div>
+    
+        <div class="project">
+            <a href="projects/wool.html">
+            <div class="img-hover-zoom">
+                <img src="img/wool.png">
+            </div>            
+                <h2>Wooly</h2>
+                <p class="f_lighter">App design</p>            
+            </a>
         </div>
 
-        <div class="grid-item all js">
-            <div class="info_none">
-            <p class="p_info">Todo list App</p>
-            <p class="p_pink">Vanilla Javascript</p>
-            <a href="projects/todo/index.html" class="a_info">Take a look</a>
-            </div>
-            <img src="img/todo.jpg">
+        <div class="project">
+            <a href="projects/door.html">
+            <div class="img-hover-zoom">
+                <img src="img/door1.png">
+            </div>            
+                <h2>Smart pet door</h2>
+                <p class="f_lighter">App design</p>            
+            </a>
         </div>
-
-        <div class="grid-item all js">
-            <div class="info_none">
-            <p class="p_info">Website Homepage</p>
-            <p class="p_pink">jQuery / Responsive</p>
-            <a href="projects/kinn/home.html" class="a_info">Take a look</a>
-            </div>
-        <img src="img/kinn.jpg">
-        </div>  
-
-
-        <div class="grid-item all design ">
-            <div class="info_none">
-            <p class="p_info">Color palettes</p>
-            <p class="p_pink"> Colors / Illustration</p>
-            <a href="projects/colors/color.html" class="a_info">Take a look</a>
-            </div>
-        <img src="img/colors.png">
-        </div>
-
-        <div class="grid-item all design ">
-            <div class="info_none">
-            <p class="p_info">Dust website</p>
-            <p class="p_pink"> Design / Responsive </p>
-            <a href="https://dust.mathieu.guillame-bert.com/" class="a_info">Take a look</a>
-            </div>
-        <img src="img/dust.png">
-        </div>
-
-        <div class="grid-item all ">
-            <div class="info_none">
-            <p class="p_info">Coming soon</p>
-            <p class="p_pink"></p>
-            <!--<a href=# class="a_info">Take a look</a>-->
-            </div>
-        <img src="img/soon.jpg">
-        </div>
-
-    </div>
+    
     </div>
 
-        <script type="text/javascript" src="app.js"></script>
             
 </body>
 </html>

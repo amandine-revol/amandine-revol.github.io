@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>Revol Amandine Portfolio</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js"></script>
+    <!-- Add any other renderers you need; see Use Renderers for more information -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css" />
+
+    <!-- video, hide controls-->
+    <style>
+        .mejs__controls { visibility:hidden !important; }
+        .mejs__container { background: #f5f5f5 !important; }
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <div class="title"><a href="../index.html">Revol Amandine</a></div>
+          
+        <nav>
+            <a href="../index.html" class="active">Portfolio</a>
+            <a href="../resume.html">Resume</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+    </header>
+
+<div id="container_home">
+
+    <div class="container_project">
+        <!-- video-->
+        <div class="vtop_center">
+            <video class="mejs__player" autoplay muted loop>
+                <source type="video/mp4" src="img/door_video.mp4" />
+            </video>
+        </div>
+        <div class="project_info">
+            <h2>Pet Smart Door mobile application. </h2>
+            <p class="f_lighter">
+            Smart door is a company that provides connected doors for pets. <br>
+            The client orders the door, installs it, and then he can control the door using the mobile app. 
+            </p>
+        </div>
+    </div>
+
+
+    <div class="row mt">
+        <div class="column">
+            <h2>The challenge : More than a pet door</h2>
+            <p class="f_lighter">
+                To stand out from the competition, the goal is to go above the basic connected door, and to provide the owner real time data about his animals. 
+                The user can control the door but also see at any times the current location of the animals. And an activity report is available to see how much time was spent outside per day / week or month.                         
+            </p>
+        </div>
+        <div class="column">
+            <h2>App main functions</h2>
+            <ul class="f_lighter">
+                <li>- Lock or unlock the door at any times.</li>
+                <li>- Register the animals with their ID.</li>
+                <li>- Schedule a time restriction.</li>
+                <li>- See the current location and record the animal activity.</li>
+                <li>- Control several doors. </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wool_screens">
+        <img src="img/door_map.png">
+    </div>
+        
+    <div class="row mt">
+        <div class="column">
+                <h2>Information architecture</h2>
+                <p class="f_lighter">
+                    The initial onboarding process had several steps. The user had to enter his informations, connect the door, manage the door settings and finally register their pet ID. 
+                </p>
+        </div>
+        <div class="column">
+            <h2>User test : paper prototype revealed that the onboarding process had too many steps.
+            </h2>
+            <p class="f_lighter">
+                Users wanted to be able to quickly synchronize the door, test it, and only later on be able to identify his pets id and set up a door schedule.
+                For most users, one of the most important functions of the app is to be able to quickly see where the animals are at all times.
+            </p>
+        </div>
+    </div>
+
+    <div class="wool_screens">
+        <img src="img/door_accounts2.png">
+    </div>
+
+    <div class="container_project flexlarge">
+        <div class="project_info_left_big">
+            <h2>Sketches </h2>
+            <p class="f_lighter">
+                Rapid sketch iterations were used to make decision about content organisation.
+                The main page needed to have two interfaces designed. 
+                One for the first use, with buttons inviting the user to identify the animals and set a time restriction.
+                And an other one once this steps where completed.
+            </p>
+        </div>
+        <!-- video-->
+        <div class="v_right">
+            <img src="img/door_sketch.png">
+        </div>
+    </div>
+
+    <div class="container_project flexlarge">
+        <div class="project_info_left_big">
+            <h2>Wireframess </h2>
+            <p class="f_lighter">
+                I set up a lo-fi clickable prototype using figma to 
+                help aid the customer conversations and also provide usability insights.</p>
+            </p>
+        </div>
+        <!-- video-->
+        <div class="v_right">
+            <img src="img/door_wire2.png">
+        </div>
+    </div>
+
+    <div class="row mt">
+        <div class="column">
+                <h2>Low fidelity prototype user test</h2>
+                <p class="f_lighter">
+                    To test the prototype, I used maze. I created 3 missions for the user :
+                </p>
+                    <ul class="f_lighter">
+                        <li>
+                            - Create an account
+                        </li>
+                        <li>
+                            - Register an animal
+                        </li>
+                        <li>
+                            - Add a time restriction to the door
+                        </li>
+                    </ul>
+            </div>
+        <div class="column">
+            <h2>Results and solution</h2>
+            <p class="f_lighter">
+                Time restriction issue : It appeared that it was not clear that when the door was locked, the animals could still enter the house but not go outside. <br>
+                Solution : I added a banner on top of the time restriction page, with the message : "Lock time : Your animals can always enter through the door even after the lock time." 
+                The banner stays until the user dismisses it.
+            </p>
+        </div>
+    </div>
+
+    <div class="wool_screens">
+        <img src="img/door_account2.png">
+    </div>
+
+    <div class="container_project flex">
+        <div class="project_info_left">
+            <h2>Account creation</h2>
+            <p class="f_lighter">
+                The first step for the user is to create an account. Then he is invited to connect
+                the door to the app. Once succesfully connected, the user is directed on the main page
+                where he can register his animal and create a schedule.
+            </p>
+        </div>
+        <!-- video-->
+        <div class="v_right">
+            <video width="400" height="667" class="mejs__player" preload="metadata" muted loop>
+                <source type="video/mp4" src="img/door_account2.mp4" />
+            </video>
+        </div>
+    </div>
+
+    <div class="wool_screens">
+        <img src="img/door_mainpage.png">
+    </div>
+
+    <div class="container_project flex">
+        <div class="project_info_left">
+            <h2>Lock / Unlock the door</h2>
+            <p class="f_lighter">
+                On the main page the user can lock and unlock the door. The color code and the icon help 
+                to see quickly the sate of the door.
+            </p>
+        </div>
+        <!-- video-->
+        <div class="v_right">
+            <video width="400" height="667" class="mejs__player" preload="metadata" muted loop>
+                <source type="video/mp4" src="img/door_lock_unlock.mp4" />
+            </video>
+        </div>
+    </div>
+
+    <div class="container_project flex">
+        <!-- video-->
+        <div class="v_left">
+            <video width="364" height="629" class="mejs__player" preload="metadata" muted loop>
+                <source type="video/mp4" src="img/door_register_animal.mp4" />
+            </video>
+        </div>
+        <div class="project_info_left">
+            <h2>Register your animals</h2>
+            <p class="f_lighter">
+                Two buttons ont the main page invite the user to register the animals and add a schedule.
+                By registering the animals microship, the door will only work for them, preventing foreign animals to enter the home.
+            </p>
+        </div>
+    </div>
+
+    <div class="wool_screens">
+        <img src="img/door_timeline.png">
+    </div>
+
+
+    <div class="container_project flex">
+        <div class="project_info_left">
+            <h2>Timeline of activity</h2>
+            <p class="f_lighter">
+                The user can see the animals activity by day, week and month. He can see how much time was spent outside. 
+                And at what hour the pet was last seen into the house.
+            </p>
+        </div>
+        <!-- video-->
+        <div class="v_right">
+            <video width="400" height="667" class="mejs__player" preload="metadata" muted loop>
+                <source type="video/mp4" src="img/door_timeline.mp4" />
+            </video>
+        </div>
+    </div>
+
+    <div class="container_project flex">
+        <!-- video-->
+        <div class="v_left">
+            <video width="364" height="629" class="mejs__player" preload="metadata" muted loop>
+                <source type="video/mp4" src="img/door_schedule.mp4" />
+            </video>
+        </div>
+        <div class="project_info_left">
+            <h2>Add a schedule</h2>
+            <p class="f_lighter">
+                Through the navigation drawer, the user can change the door name and quickly acces the main area of the app.
+            </p>
+        </div>
+    </div>
+
+    <div class="container_project flex">
+        <div class="project_info_left">
+            <h2>Navigation drawer</h2>
+            <p class="f_lighter">
+                Through the navigation drawer, the user can change the door name and quickly acces the main area of the app.
+            </p>
+        </div>
+        <!-- video-->
+        <div class="v_right">
+            <video width="400" height="667" class="mejs__player" preload="metadata" muted loop>
+                <source type="video/mp4" src="img/door_drawer.mp4" />
+            </video>
+        </div>
+    </div>
+
+    <div class="container_project flexlarge">
+        <div class="project_info_left_big">
+            <h2>Several doors </h2>
+            <p class="f_lighter">
+                Multiple doors can be controled through the app. Each door is accessible via a tab.
+            </p>
+        </div>
+        <!-- video-->
+        <div class="v_right">
+            <img src="img/door_several.png">
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
+
