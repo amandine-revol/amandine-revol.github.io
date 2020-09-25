@@ -73,7 +73,10 @@ body{
 }
 a{
     text-decoration: none;
-
+    color:$txt-color;
+}
+a:hover{
+    color:$selected-color;
 }
 .bold{
     font-weight: bolder;
@@ -120,6 +123,9 @@ img {
     @include website-size();
     margin-top:50px;
     margin-bottom: 50px;
+}
+.mtop{
+    margin-top:100px;
 
 }
 #container_home{
@@ -134,7 +140,27 @@ img {
     margin-top:100px;
     padding: 0 30px;
     margin-bottom: 50px;
-
+}
+.footer_center{
+    @include website-size();
+    margin-top:50px;
+    color:$txt-color;
+    padding:50px 0;
+    justify-content: space-between;
+    display: flex;
+    align-items: baseline;
+}
+.right{
+    color:lightgray;
+}
+.footer_center a{
+    text-align: right;
+}
+.footer_center a:hover{
+    color:$selected-color;
+}
+.footer_txt{
+    margin-right:20px;
 }
 .intro{
     text-align: center;
@@ -148,11 +174,17 @@ img {
 .project_info{
     text-align: center;
 }
+.project_left{
+    max-width: 50%;
+}
 .project_info_left{
     max-width: 370px;
 }
 .project_info_left_large{
     max-width: 600px;
+}
+.project_info_left_big{
+    max-width: 420px;
 }
 .project_info_left_small{
     max-width: 200px;
@@ -197,10 +229,14 @@ h2{
 }
 .wool_screens{
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
+  // display: flex;
+   // justify-content: center;
 }
-
+.wool_screens img{
+text-align: center;
+margin: auto;
+display: block;
+}
 .flex{
     display:flex;
     align-items: center;
@@ -263,7 +299,9 @@ h2{
       margin-top:100px;
       margin-bottom:100px;
 }
-
+.block{
+    display:block;
+}
 
 /****form style*****/
 /* Style inputs with type="text", select elements and textareas */

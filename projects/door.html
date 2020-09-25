@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Revol Amandine Portfolio</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -17,15 +18,19 @@
         .mejs__container { background: #f5f5f5 !important; }
     </style>
 
+    <!--font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body>
     
     <header>
-        <div class="title"><a href="../index.html">Revol Amandine</a></div>
+        <div class="title"><a href="../index.html">Amandine Revol</a></div>
           
         <nav>
             <a href="../index.html" class="active">Portfolio</a>
-            <a href="../resume.html">Resume</a>
+            <a href="../about.html">About</a>
             <a href="../contact.html">Contact</a>
         </nav>
     </header>
@@ -44,14 +49,24 @@
             <p class="f_lighter">
             Smart door is a company that provides connected doors for pets. <br>
             The client orders the door, installs it, and then he can control the door using the mobile app. 
-            </p>
+            </p><br><br>
+            <ul class="f_lighter">
+                <li><a href="#challenge">1. The challenge</a></li>
+                <li><a href="#info">2. Information architecture</a></li>
+                <li><a href="#info">3. User test</a></li>
+                <li><a href="#sketch">4. Sketches</a></li>
+                <li><a href="#wire">5. Wireframes</a></li>
+                <li><a href="#lowfi">6. Low fidelity user test</a></li>
+                <li><a href="#proto">7. Prototypes</a></li>
+
+            </ul>
         </div>
     </div>
 
 
     <div class="row mt">
         <div class="column">
-            <h2>The challenge : More than a pet door</h2>
+            <h2 id="challenge">1. The challenge : More than a pet door</h2>
             <p class="f_lighter">
                 To stand out from the competition, the goal is to go above the basic connected door, and to provide the owner real time data about his animals. 
                 The user can control the door but also see at any times the current location of the animals. And an activity report is available to see how much time was spent outside per day / week or month.                         
@@ -75,13 +90,13 @@
         
     <div class="row mt">
         <div class="column">
-                <h2>Information architecture</h2>
+                <h2 id="info">2. Information architecture</h2>
                 <p class="f_lighter">
                     The initial onboarding process had several steps. The user had to enter his informations, connect the door, manage the door settings and finally register their pet ID. 
                 </p>
         </div>
         <div class="column">
-            <h2>User test : paper prototype revealed that the onboarding process had too many steps.
+            <h2>3. User test : paper prototype revealed that the onboarding process had too many steps.
             </h2>
             <p class="f_lighter">
                 Users wanted to be able to quickly synchronize the door, test it, and only later on be able to identify his pets id and set up a door schedule.
@@ -96,7 +111,7 @@
 
     <div class="container_project flexlarge">
         <div class="project_info_left_big">
-            <h2>Sketches </h2>
+            <h2 id="sketch">4. Sketches </h2>
             <p class="f_lighter">
                 Rapid sketch iterations were used to make decision about content organisation.
                 The main page needed to have two interfaces designed. 
@@ -112,7 +127,7 @@
 
     <div class="container_project flexlarge">
         <div class="project_info_left_big">
-            <h2>Wireframess </h2>
+            <h2 id="wire">5. Wireframess </h2>
             <p class="f_lighter">
                 I set up a lo-fi clickable prototype using figma to 
                 help aid the customer conversations and also provide usability insights.</p>
@@ -126,9 +141,9 @@
 
     <div class="row mt">
         <div class="column">
-                <h2>Low fidelity prototype user test</h2>
+                <h2 id="lowfi">6. Low fidelity prototype user test</h2>
                 <p class="f_lighter">
-                    To test the prototype, I used maze. I created 3 missions for the user :
+                    To test the prototype, I used <a href="https://maze.design/" style="font-weight: bolder;">maze</a>. I created 3 missions for the user :
                 </p>
                     <ul class="f_lighter">
                         <li>
@@ -152,9 +167,11 @@
         </div>
     </div>
 
-    <div class="wool_screens">
+    <div class="wool_screens" id="proto">
+        <h2>7. High fidelity prototypes</h2>
         <img src="img/door_account2.png">
     </div>
+   
 
     <div class="container_project flex">
         <div class="project_info_left">
@@ -219,7 +236,7 @@
             <h2>Timeline of activity</h2>
             <p class="f_lighter">
                 The user can see the animals activity by day, week and month. He can see how much time was spent outside. 
-                And at what hour the pet was last seen into the house.
+                And at what hour the pet was last seen into the house. The design was created following <a href="https://material.io/components/tabs#behavior" style="font-weight:bolder;">material design tabs guidelines.</a>
             </p>
         </div>
         <!-- video-->
@@ -272,11 +289,22 @@
             <img src="img/door_several.png">
         </div>
     </div>
-
-
-
-
 </div>
+
+<footer>
+    <div class="footer_center">
+        <span class="right">© 2020 Amandine Revol</span>
+        <a href="https://dribbble.com/Amandines">
+            <span style="font-size: 27px; vertical-align: middle;">
+                <i class="fa fa-dribbble" aria-hidden="true"></i>
+            </span>
+        </a>
+        <a href="baz.html">
+            <span class="footer_txt">Next project </span>
+            <i class="fa fa-long-arrow-right" style="font-size:60px;vertical-align: middle;"></i>
+        </a>
+    </div>
+</footer>
 
 
 
