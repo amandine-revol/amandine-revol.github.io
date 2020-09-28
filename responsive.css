@@ -1,0 +1,50 @@
+@media screen and (max-width: 1000px){
+    .vtop_center{
+        max-width: 986px;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .row, .row-third {
+        display: block;
+    }
+    .column {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    #container_home{
+        margin-bottom:0px;
+        margin-top:50px;
+        padding: 0 20px;
+    }
+    .footer_center {
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding:30px 20px 10px 20px;
+    }   
+    #container_contact {
+        padding: 0 20px;
+    }
+    #container_project {
+        padding: 0 20px;
+    }
+    .intro {
+        font-size: 20px;
+        font-size: 2rem;
+        line-height: 37px;
+    }
+    .v_left {
+        display: none;
+    }
+    .project_info_left_large {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    header {
+        flex-direction: column;
+    }
+}
