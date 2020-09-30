@@ -138,6 +138,11 @@ img {
     padding: 0 30px;
     margin-bottom: 100px;
 }
+#container_portfolio{
+    @include website-size();
+    padding: 0 30px;
+    margin-bottom: 100px;
+}
 #container_contact{
     max-width: 900px;
     margin: auto;
@@ -225,10 +230,25 @@ h2{
     box-shadow:0 6px 16px 0 rgba(0, 0, 0, 0.3);
 }
 .vtop_center{
-    display:flex;
-    justify-content: center;
-    max-width: 896px;
-    margin:auto;
+    //display:flex;
+    //justify-content: center;
+    width:95%;
+	max-width: 896px;
+	margin: 0 auto;
+}
+.small_video {
+    //width: 55%;
+    max-width: 364px;
+    margin: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.medium_video {
+    //width: 55%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .v_left{
     margin-right:100px;
@@ -343,18 +363,56 @@ input[type=text], textarea {
 
 /**********************************************/
 
+@media screen and (max-width: 1200px){
+    .project_left {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .v_left{
+        margin-right:10px;
+    }
+    .v_right{
+        margin-left:10px;
+    }
+    .mt {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .row .column:first-of-type {
+        margin-right: 0px;
+    }
+    .flexlarge {
+        flex-direction: column;
+    }
+    .project_info_left_big {
+        max-width: 95%;
+        margin-bottom:20px;
+    }
+}
+
+
 @media screen and (max-width: 700px){
     .row, .row-third {
         display: block;
     }
     .column {
-        width: 100%;
+        width: 95%;
         margin: 0 0 10px 0;
+        padding: 20px;
+    }
+    .row .column:last-of-type {
+        margin-left: 0px;
     }
     #container_home{
         margin-bottom:0px;
         margin-top:50px;
         padding: 0 20px;
+    }
+    .container_project {
+        margin-top: 20px;
+        margin-bottom: 20px;;
     }
     .footer_center {
         flex-direction: column-reverse;
@@ -373,16 +431,35 @@ input[type=text], textarea {
         font-size: 2rem;
         line-height: 37px;
     }
-    .v_left {
+    .picture {
         display: none;
+    }
+    .pic{
+        display:none;
+    }
+    .v_left{
+        margin-right:0;
+    }
+    .v_right{
+        margin-left:0px;
     }
     .project_info_left_large {
         max-width: 100%;
+    }
+    .project {
+        margin-top: 50px;
     }
 }
 
 @media (max-width: 600px){
     header {
         flex-direction: column;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .project_info_left {
+        text-align: center;
+        max-width: 100%;
     }
 }

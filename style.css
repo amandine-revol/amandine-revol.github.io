@@ -171,6 +171,13 @@ img {
   margin-bottom: 100px;
 }
 
+#container_portfolio {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 30px;
+  margin-bottom: 100px;
+}
+
 #container_contact {
   max-width: 900px;
   margin: auto;
@@ -296,14 +303,23 @@ h2 {
 }
 
 .vtop_center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 95%;
   max-width: 896px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.small_video {
+  max-width: 364px;
+  margin: 0 auto;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.medium_video {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .v_left {
@@ -466,18 +482,58 @@ button[type=submit]:hover {
 }
 
 /**********************************************/
+@media screen and (max-width: 1200px) {
+  .project_left {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .v_left {
+    margin-right: 10px;
+  }
+  .v_right {
+    margin-left: 10px;
+  }
+  .mt {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .row .column:first-of-type {
+    margin-right: 0px;
+  }
+  .flexlarge {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project_info_left_big {
+    max-width: 95%;
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .row, .row-third {
     display: block;
   }
   .column {
-    width: 100%;
+    width: 95%;
     margin: 0 0 10px 0;
+    padding: 20px;
+  }
+  .row .column:last-of-type {
+    margin-left: 0px;
   }
   #container_home {
     margin-bottom: 0px;
     margin-top: 50px;
     padding: 0 20px;
+  }
+  .container_project {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .footer_center {
     -webkit-box-orient: vertical;
@@ -502,11 +558,23 @@ button[type=submit]:hover {
     font-size: 2rem;
     line-height: 37px;
   }
-  .v_left {
+  .picture {
     display: none;
+  }
+  .pic {
+    display: none;
+  }
+  .v_left {
+    margin-right: 0;
+  }
+  .v_right {
+    margin-left: 0px;
   }
   .project_info_left_large {
     max-width: 100%;
+  }
+  .project {
+    margin-top: 50px;
   }
 }
 
@@ -516,6 +584,16 @@ button[type=submit]:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project_info_left {
+    text-align: center;
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
