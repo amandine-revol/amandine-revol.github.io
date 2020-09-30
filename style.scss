@@ -451,7 +451,7 @@ input[type=text], textarea {
     }
 }
 
-@media (max-width: 600px){
+@media screen and (max-width: 600px){
     header {
         flex-direction: column;
     }
