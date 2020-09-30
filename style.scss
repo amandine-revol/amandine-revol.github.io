@@ -150,6 +150,13 @@ img {
     padding: 0 30px;
     margin-bottom: 50px;
 }
+#container_about{
+    max-width: 900px;
+    margin: auto;
+    margin-top:50px;
+    padding: 0 30px;
+    margin-bottom: 50px;
+}
 footer {
     margin-top:auto; 
 }
@@ -390,6 +397,9 @@ input[type=text], textarea {
         max-width: 95%;
         margin-bottom:20px;
     }
+    .pic{
+        margin-right:50px;
+    }
 }
 
 
@@ -410,8 +420,8 @@ input[type=text], textarea {
         margin-top:50px;
         padding: 0 20px;
     }
-    .container_project {
-        margin-top: 20px;
+    #container_about {
+        margin-top: 0px;
         margin-bottom: 20px;;
     }
     .footer_center {
@@ -424,8 +434,9 @@ input[type=text], textarea {
         padding: 0 20px;
         margin-top: 20px;
     }
-    #container_project {
-        padding: 0 20px;
+    .container_project {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .intro {
         font-size: 20px;
