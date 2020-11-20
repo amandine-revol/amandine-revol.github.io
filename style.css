@@ -49,6 +49,8 @@ body {
 
 ol, ul {
   list-style: none;
+  display: inline-block;
+  text-align: left;
 }
 
 blockquote, q {
@@ -81,6 +83,10 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #f5f5f5;
   line-height: 30px;
+}
+
+body.cook {
+  background-color: #FFFFFF;
 }
 
 a {
@@ -153,8 +159,6 @@ img {
 }
 
 .container_project {
-  max-width: 1400px;
-  margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -167,14 +171,14 @@ img {
   max-width: 1400px;
   margin: auto;
   margin-top: 100px;
-  padding: 0 30px;
+  padding: 0 60px;
   margin-bottom: 100px;
 }
 
 #container_portfolio {
   max-width: 1400px;
   margin: auto;
-  padding: 0 30px;
+  padding: 0 100px;
   margin-bottom: 100px;
 }
 
@@ -277,6 +281,11 @@ h2 {
   padding: 20px 0 10px;
 }
 
+h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
 .f_lighter {
   font-weight: lighter;
 }
@@ -314,6 +323,11 @@ h2 {
   width: 95%;
   max-width: 896px;
   margin: 0 auto;
+}
+
+.imgtop_center {
+  margin: auto;
+  max-width: 1400px;
 }
 
 .small_video {
@@ -490,7 +504,7 @@ button[type=submit]:hover {
 }
 
 /**********************************************/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   .project_left {
     max-width: 100%;
   }
@@ -522,6 +536,12 @@ button[type=submit]:hover {
   }
   .pic {
     margin-right: 50px;
+  }
+  #container_home {
+    padding: 0 30px;
+  }
+  #container_portfolio {
+    padding: 0 50px;
   }
 }
 
@@ -565,6 +585,9 @@ button[type=submit]:hover {
   .container_project {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  #container_portfolio {
+    padding: 0 20px;
   }
   .intro {
     font-size: 20px;
