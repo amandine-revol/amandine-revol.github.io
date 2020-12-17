@@ -22,6 +22,11 @@
     <!-- Add any other renderers you need; see Use Renderers for more information -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css" />
 
+     <!-- Fancybox -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+ 
+
     <!-- video, hide controls-->
     <style>
         .mejs__controls { visibility:hidden !important; }
@@ -62,7 +67,7 @@
     </div>
 
     <div class="wool_screens">
-        <img src="img/wool_screen.png">
+        <a data-fancybox="gallery" href="img/wool_screen.png"><img src="img/wool_screen.png"></a>
     </div>
 
     <div class="container_project flex">
