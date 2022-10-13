@@ -5,6 +5,10 @@ $txt-color: #616161;
 $selected-color: #e31b6d;
 
 @mixin website-size(){
+    max-width:980px;
+    margin:auto;
+}
+@mixin website-size2(){
     max-width:1400px;
     margin:auto;
 }
@@ -46,12 +50,22 @@ body {
     margin:0;
     display:flex; 
     flex-direction:column; 
+    font-weight: 200;
 }
+/*img {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+   // image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}*/
+/*
 ol, ul {
     list-style: none;
     display: inline-block;
     text-align: left;
 }
+*/
 blockquote, q {
 	quotes: none;
 }
@@ -74,11 +88,15 @@ body{
     font-size: 18px;
     color: $txt-color;
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
-    line-height: 30px;
+    /*background-color: #f5f5f5;*/
+    line-height: 34px;
+    padding: 0 100px;
 }
 body.cook{
     background-color: #FFFFFF;
+}
+body.wool{
+    background-color: #f5f5f5 !important;
 }
 a{
     text-decoration: none;
@@ -89,17 +107,51 @@ a:hover{
 }
 .bold{
     font-weight: bolder;
-    color:$selected-color;
+}
+.bold_link{
+    font-weight: bolder;
+    text-decoration: underline;
 }
 header{
     align-items: baseline;
     justify-content: space-between;
     display: flex;
     margin-top:20px;
+    font-weight:400;
+}
+table, td, th {
+    border: 1px solid;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+  }
+table {
+    width: 100%;
+}
+.margin20{
+    margin-bottom: 20px;
+}
+.margin32{
+    margin-top: 32px;
+}
+.margin32_bottom{
+    margin-bottom: 32px;
+}
+.margin56{
+    margin-bottom:56px !important;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 .title{
     font-size: 17px;
-    font: size 1.7rem;
+    font-size: 1.7rem;
     padding-left:30px;
 }
 .title a{
@@ -128,25 +180,42 @@ img {
     max-width: 100%;
     height: auto;
 }
+.header_project{
+    margin:auto;
+    max-width: 1400px;
+    margin-top:50px;
+}
 .container_project{
     //@include website-size();
     margin-top:50px;
     margin-bottom: 50px;
 }
+.block{
+    margin-bottom:56px;
+}
+.block-grey{
+    background-color: #F9F9F9;
+    padding:32px;
+    margin-bottom: 32px;
+    border-radius:12px;
+}
+ul.square {
+    list-style-type: square;
+    padding-left: 40px;
+  }
 .mtop{
     margin-top:100px;
-
 }
 #container_home{
-    @include website-size();
+    @include website-size2();
     margin-top:100px;
     padding: 0 60px;
     margin-bottom: 100px;
 }
 #container_portfolio{
     @include website-size();
-    padding: 0 100px;
-    margin-bottom: 100px;
+    //padding: 0 100px;
+    margin-top:56px;
 }
 #container_contact{
     max-width: 900px;
@@ -187,16 +256,24 @@ footer {
     margin-right:20px;
 }
 .intro{
-    text-align: center;
     font-size:30px;
     font-size: 3rem;
-    line-height: 46px;
+    line-height: 54px;
+    margin-bottom: 16px;
+}
+.intro2{
+    font-size:22px;
+    font-size: 2.2rem;
+    line-height: 34px;
 }
 .project{
     margin-top:100px;
 }
-.project_info{
+/*.project_info{
     text-align: center;
+}*/
+.project_title{
+    margin-bottom:56px;
 }
 .project_left{
     max-width: 50%;
@@ -216,19 +293,47 @@ footer {
 .project a{
    color:$txt-color;
 }
-h2{
-    font-size:20px;
-    font-size: 2rem;
-    line-height: 30px;
+h1{
+    font-size:36px;
+    font-size: 3.6rem;
+    line-height: 44px;
     padding: 20px 0 10px;
+    font-weight: 400;
+}
+h2{
+    font-size:28px;
+    font-size: 2.8rem;
+    line-height: 33px;
+    font-weight: 400;
+    margin-bottom: 16px;
 }
 h3{
     font-size:18px;
     font-size: 1.8rem;
 }
+h4{
+    font-size:18px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #DC4712;
+    margin-bottom:32px;
+    margin-top:56px;
+}
+h5{
+    font-size:18px;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+h6{
+    font-size:16px;
+    font-size: 1.6rem;
+    color:#777D8D;
+}
+/*
 .f_lighter{
     font-weight: lighter;
 }
+*/
 .img-hover-zoom {
     height: auto; /* [1.1] Set it as per your need */
     overflow: hidden; /* [1.2] Hide the overflowing of child elements */
@@ -404,7 +509,7 @@ input[type=text], textarea {
         margin-right: 0px;
     }
     .flexlarge {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .project_info_left_big {
         max-width: 95%;
@@ -417,7 +522,7 @@ input[type=text], textarea {
         padding: 0 30px;
     }
     #container_portfolio {
-        padding: 0 50px;
+        //padding: 0 50px;
     }
 }
 
