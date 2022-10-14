@@ -163,7 +163,6 @@ hr {
 .title {
   font-size: 17px;
   font-size: 1.7rem;
-  padding-left: 30px;
 }
 
 .title a {
@@ -180,7 +179,9 @@ nav a {
   text-transform: uppercase;
   font-size: 15px;
   font-size: 1.5rem;
-  padding: 10px 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
   text-decoration: none;
   color: #616161;
 }
@@ -233,7 +234,6 @@ ul.square {
   max-width: 1400px;
   margin: auto;
   margin-top: 100px;
-  padding: 0 60px;
   margin-bottom: 100px;
 }
 
@@ -561,8 +561,17 @@ button[type=submit]:hover {
   .project_left {
     max-width: 100%;
   }
+  #container_portfolio {
+    margin-top: 24px;
+  }
 }
 @media screen and (max-width: 950px) {
+  body {
+    padding: 0 50px;
+  }
+  .project_info_left_large {
+    max-width: 100%;
+  }
   .v_left {
     margin-right: 10px;
   }
@@ -586,11 +595,29 @@ button[type=submit]:hover {
   .pic {
     margin-right: 50px;
   }
-  #container_home {
-    padding: 0 30px;
-  }
 }
 @media screen and (max-width: 700px) {
+  body {
+    padding: 0 16px;
+  }
+  h1 {
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 32px;
+    padding: 20px 0 10px;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+  h4 {
+    margin-bottom: 12px;
+    margin-top: 16px;
+  }
   .row, .row-third {
     display: block;
   }
@@ -605,7 +632,6 @@ button[type=submit]:hover {
   #container_home {
     margin-bottom: 0px;
     margin-top: 50px;
-    padding: 0 20px;
   }
   #container_about {
     margin-top: 0px;
@@ -626,18 +652,12 @@ button[type=submit]:hover {
     margin-bottom: 20px;
   }
   #container_portfolio {
-    padding: 0 20px;
+    margin-top: 16px;
   }
   .intro {
     font-size: 20px;
     font-size: 2rem;
     line-height: 37px;
-  }
-  .picture {
-    display: none;
-  }
-  .pic {
-    display: none;
   }
   .v_left {
     margin-right: 0;
@@ -654,7 +674,7 @@ button[type=submit]:hover {
 }
 @media screen and (max-width: 600px) {
   header {
-    flex-direction: column;
+    justify-content: flex-start;
   }
   .flex {
     flex-direction: column;
