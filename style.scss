@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 $txt-color: #616161;
-$selected-color: #e31b6d;
+$selected-color: #DC4712;
 
 @mixin website-size(){
     max-width:980px;
@@ -103,7 +103,7 @@ a{
     color:$txt-color;
 }
 a:hover{
-    color:$selected-color;
+    color:$selected-color ;
 }
 .bold{
     font-weight: bolder;
