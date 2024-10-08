@@ -696,4 +696,39 @@ button[type=submit]:hover {
 
 .miniature_image:hover {
   opacity: 0.5;
+}
+
+.testimonials-container {
+  text-align: center;
+  margin: auto;
+  margin-top: 120px;
+}
+
+.testimonial {
+  display: inline-block;
+  width: 45%;
+  margin: 10px 20px;
+  padding: 20px;
+  border: 1px solid #ccc; /* Added border here */
+  box-sizing: border-box;
+  text-align: left; /* Align text to the left */
+  vertical-align: top;
+  border-radius: 8px;
+}
+
+.author {
+  display: block;
+  font-size: 16px;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+@media (max-width: 750px) {
+  .testimonial {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+  }
 }/*# sourceMappingURL=style.css.map */
