@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 $txt-color: #616161;
-$selected-color: #DC4712;
+$selected-color: #8A6B4F;
 
 @mixin website-size(){
     max-width:980px;
@@ -155,32 +155,62 @@ hr {
 }
 .title a{
     text-decoration: none;
-    color: $txt-color;
+    color: $selected-color;
+}
+.title a:hover{
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 nav {
     display:flex;
     justify-content: space-evenly;
 }
 nav a{
-    text-transform: uppercase;
-    font-size: 15px;
-    font-size:1.5rem;
+    text-transform: capitalize;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
     text-decoration: none;
-    color: $txt-color;
+    color: #333333;
 }
 nav a:hover {
-color:$selected-color;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #333333;
 }
 nav a.active{
-    color:$selected-color;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #333333;
 }
 img {
     max-width: 100%;
     height: auto;
 }
+
+.project-row .project img {
+    width: 100%;
+    height: auto;
+    max-height: 340px;
+    border: 1px solid #ccc;
+    border-radius: 16px !important;
+    max-width: 1400px;
+    margin-top: 50px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 0 0 6px;
+    max-width: 1400px;
+    margin-top: 50px;
+}
+
 .header_project{
     margin:auto;
     max-width: 1400px;
@@ -250,7 +280,7 @@ footer {
     text-align: right;
 }
 .footer_center a:hover{
-    color:$selected-color;
+    color:#424242;
 }
 .footer_txt{
     margin-right:20px;
@@ -259,13 +289,14 @@ footer {
     font-size:30px;
     font-size: 3rem;
     line-height: 54px;
-    margin-bottom: 16px;
+    margin-bottom: 24px; // increased spacing
 }
 .intro2{
     font-size:22px;
     font-size: 2.2rem;
     line-height: 34px;
     max-width: 80%;
+    margin-bottom: 40px; // add space before projects
 }
 .project{
     margin-top:100px;
@@ -275,6 +306,16 @@ footer {
 }*/
 .project_title{
     margin-bottom:56px;
+}
+
+/* Project card titles: reduced size for better balance */
+.project h2{
+    font-size:20px;
+    font-size:2.0rem;
+    line-height:1.3;
+    margin-top:12px;
+    margin-bottom:12px;
+    font-weight:600;
 }
 .project_left{
     max-width: 50%;
@@ -293,6 +334,11 @@ footer {
 }
 .project a{
    color:$txt-color;
+   text-decoration:none;
+}
+.project a:hover{
+   text-decoration: none;
+   color:#424242;
 }
 h1{
     font-size:36px;
@@ -316,7 +362,7 @@ h4{
     font-size:18px;
     font-size: 1.8rem;
     font-weight: 400;
-    color: #DC4712;
+    color: $selected-color;
     margin-bottom:32px;
     margin-top:56px;
 }
@@ -664,6 +710,16 @@ opacity: 0.5;
     font-size: 16px;
 }
 
+.author-block .author-name {
+    font-weight: 700;
+    font-size: 18px; /* explicit minimum for readability */
+}
+
+.author-block .author-title {
+    color: #7a7f86;
+    font-size: 16px; /* minimum 16px */
+}
+
 hr {
     margin: 10px 0;
 }
@@ -673,5 +729,24 @@ hr {
         display: block;
         width: 80%;
         margin: 20px auto;
+    }
+}
+
+@media (max-width: 1250px) {
+    .project-row .project img {
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+}
+
+/* When stacked vertically, keep all project images to the same max height
+     to avoid uneven card heights. Use the existing project image height (260px). */
+@media (max-width: 1250px) {
+    .project img {
+        max-height: 260px;
+        width: 100%;
+        height: auto;
+        display: block;
     }
 }
