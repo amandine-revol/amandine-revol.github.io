@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1YFMZZ6FT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-R1YFMZZ6FT');
+    </script>
+
+    <!-- Hotjar Tracking Code for https://amandine-revol.github.io/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2186603,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="icon" type="image/png" href="../img/fav.png" />
+    <title>Turning public complaints into jobs-to-be-done — Amandine Revol</title>
+
+    <!--font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .article-container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .article-container h1 {
+            font-size: 2.2em;
+            margin-bottom: 0.8em;
+            line-height: 1.3;
+        }
+
+        .article-container h2 {
+            font-size: 1.6em;
+            margin-top: 1.5em;
+            margin-bottom: 0.6em;
+            line-height: 1.3;
+        }
+
+        .article-container h3 {
+            font-size: 1.1em;
+            margin-top: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        .article-container p {
+            line-height: 1.7;
+            margin-bottom: 1em;
+            color: #333;
+        }
+
+        .article-container ul {
+            margin-bottom: 1.5em;
+            margin-left: 1.5em;
+            line-height: 1.7;
+        }
+
+        .article-container li {
+            margin-bottom: 0.5em;
+        }
+
+        .article-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2em 0;
+            font-size: 0.95em;
+        }
+
+        .article-table th {
+            background-color: #f5f5f5;
+            padding: 1em;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .article-table td {
+            padding: 1em;
+            border-bottom: 1px solid #eee;
+            line-height: 1.6;
+        }
+
+        .article-table tr:last-child td {
+            border-bottom: 2px solid #ddd;
+        }
+
+        .nav-back {
+            margin-bottom: 2em;
+        }
+
+        .nav-back a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.95em;
+        }
+
+        .nav-back a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="title"><a href="../index.html">Amandine Revol</a></div>
+        <nav>
+            <a href="../index.html" class="active">Work</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="header_project">
+        <div class="imgtop_center">
+            <img src="img/cv-hero.png" alt="Turning public complaints into jobs-to-be-done">
+        </div>
+    </div>
+
+    <div class="article-container">
+       
+
+        <h1>Turning public complaints into jobs-to-be-done: an AI conversation mining experiment</h1>
+
+        <h2>Discovery without the wait</h2>
+        <p>
+            When we needed to define a new CV Optimizer feature, traditional discovery would have been slow 
+            and not necessarily representative of the Swiss market. So I mined Reddit with AI instead, 
+            structured the output to be actionable, and later ran it against a 100-person survey. 
+            The two were surprisingly close.
+        </p>
+
+        <h2>Why conversation mining</h2>
+        <ul>
+            <li>To ground the prototype in real pain points and preferences, not guesses.</li>
+            <li>To define JTBD and product principles that could guide every design decision that followed.</li>
+            <li>To spot the patterns that kept resurfacing across threads.</li>
+        </ul>
+
+        <h2>How I mined it</h2>
+        <p>
+            I used AI to mine roughly 50 Reddit threads, testing whether it could produce insight 
+            reliable enough to act on. Four rules kept the output honest:
+        </p>
+        <ul>
+            <li>Use the audience's own words.</li>
+            <li>Describe frequency in plain language instead of fabricated quote counts.</li>
+            <li>Treat every finding as a hypothesis, not a fact.</li>
+            <li>Return a structured report with sources for human review.</li>
+        </ul>
+
+          <a data-fancybox="gallery" href="img/cv-doc.png"><img width="760" src="img/cv-doc.png"></a><br><br>
+        <p>
+            The output followed a fixed structure: JTBD ranked by frequency, pain points ranked by frequency 
+            times intensity, tool sentiment, AI attitudes, and Swiss-specific patterns.
+        </p>
+
+        <h2>What it surfaced</h2>
+
+          <a data-fancybox="gallery" href="img/cv-jtbd.png"><img width="760" src="img/cv-jtbd.png"></a><br><br>
+        <p>
+            Three jobs to be done stood out: go fast, get past the ATS filter, and don't make me sound like AI. 
+            Each mapped directly to a design principle:
+        </p>
+
+        <p>
+            The concise-output principle is also the differentiator from general AI assistants like ChatGPT, Claude, 
+            Gemini, and Copilot, which tend to hand back a wall of text to review.
+        </p>
+
+        <h2>What the survey confirmed</h2>
+
+
+              <a data-fancybox="gallery" href="img/cv-survey.png"><img width="760" src="img/cv-survey.png"></a><br><br>
+           
+
+        <p>
+            Conversation mining landed close to what the 100-person survey later found. Mining didn't replace 
+            the survey, it made the survey sharper: instead of fishing for open-ended pain points, it tested 
+            specific claims and came back with a clear confirm or kill on each.
+        </p>
+
+        <h2>Limits</h2>
+        <ul>
+            <li>
+                <strong>Reddit users tend to be white-collar and vocal</strong>, quiet or blue-collar job seekers 
+                are underrepresented. The survey deliberately included blue-collar respondents to correct for that.
+            </li>
+            <li>
+                <strong>Mining gives you hypotheses, not proven facts.</strong> AI can still get things wrong even 
+                when it cites a source, so someone still needs to check the sources before trusting the findings.
+            </li>
+            <li>
+                <strong>This only works for topics people are already talking about a lot online.</strong> A niche 
+                or low-visibility topic won't have enough public discussion to mine.
+            </li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>
+            Fast and informed don't have to be a tradeoff. Mining got us to design principles in days, not weeks, 
+            and when we checked them against 100 real job seekers, they mostly held up. If you're stuck with the 
+            same time pressure, don't just mine for insights, turn them into clear bets, then let your survey test 
+            those bets instead of starting from scratch.
+        </p>
+
+        <div class="nav-back" style="margin-top: 3em; border-top: 1px solid #eee; padding-top: 2em;">
+            <a href="../index.html">← Back to home</a>
+        </div>
+    </div>
+
+
+<footer>
+    <div class="footer_center">
+        <span class="right">© 2026 Amandine Revol</span>
+        <span>
+            <a href="https://dribbble.com/Amandines">
+                <span style="font-size: 27px; vertical-align: middle;">
+                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                </span>
+            </a>
+        </span>
+    <a href="wool.html">
+            <span class="footer_txt">Next project </span>
+            <i class="fa fa-long-arrow-right" style="font-size:60px;vertical-align: middle;"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

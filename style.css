@@ -340,6 +340,11 @@ footer {
 .project-row {
   display: flex;
   gap: 120px;
+  flex-wrap: wrap;
+}
+
+.project-row + .project-row {
+  margin-top: 48px;
 }
 
 .project-row .project {
@@ -348,14 +353,52 @@ footer {
   margin-top: 0;
 }
 
-@media (max-width: 1250px) {
+.project-row .margin20 {
+  overflow: hidden;
+  aspect-ratio: 2568/1368;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.project-row .project img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin-top: 0;
+  border: 0;
+  border-radius: 0 !important;
+}
+
+.project-row--single .project-empty {
+  min-height: 1px;
+}
+
+@media (max-width: 1300px) {
+  .project-row {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 920px) {
   .project-row {
     flex-direction: column;
     gap: 40px;
   }
 
-  /* When the two featured projects stack on smaller viewports,
+  .project-row--single .project-empty {
+    display: none;
+  }
+
+  /* When the two featured projects stack on narrower viewports,
      let their images use natural height to avoid strange stretching. */
+  .project-row .margin20 {
+    aspect-ratio: auto;
+  }
+
   .project-row .project img {
     height: auto;
     width: 100%;
@@ -475,6 +518,12 @@ h6 {
     font-weight: lighter;
 }
 */
+.f_lighter {
+  font-size: 14px;
+  color: #777D8D;
+  font-weight: 400;
+  margin-top: 0px;
+}
 .img-hover-zoom {
   height: auto; /* [1.1] Set it as per your need */
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */

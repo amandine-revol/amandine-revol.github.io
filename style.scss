@@ -192,14 +192,45 @@ img {
     height: auto;
 }
 
+.project-row {
+    display: flex;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+.project-row + .project-row {
+    margin-top: 48px;
+}
+
+.project-row .project {
+    flex: 1;
+    min-width: 320px;
+    margin-top: 0;
+}
+
+.project-row .margin20 {
+    overflow: hidden;
+    aspect-ratio: 2568/1368;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    background: #fff;
+}
+
 .project-row .project img {
     width: 100%;
-    height: auto;
-    max-height: 340px;
-    border: 1px solid #ccc;
-    border-radius: 16px !important;
+    height: 100%;
+    max-height: none;
+    border: 0;
+    border-radius: 0 !important;
     max-width: 1400px;
-    margin-top: 50px;
+    margin-top: 0;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+.project-row--single .project-empty {
+    min-height: 1px;
 }
 
 .project img {
@@ -732,7 +763,26 @@ hr {
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
+    .project-row {
+        gap: 32px;
+    }
+}
+
+@media (max-width: 920px) {
+    .project-row {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .project-row--single .project-empty {
+        display: none;
+    }
+
+    .project-row .margin20 {
+        aspect-ratio: auto;
+    }
+
     .project-row .project img {
         height: auto;
         width: 100%;
@@ -742,7 +792,7 @@ hr {
 
 /* When stacked vertically, keep all project images to the same max height
      to avoid uneven card heights. Use the existing project image height (260px). */
-@media (max-width: 1250px) {
+@media (max-width: 920px) {
     .project img {
         max-height: 260px;
         width: 100%;
