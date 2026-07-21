@@ -377,6 +377,30 @@ footer {
   min-height: 1px;
 }
 
+.fancybox-toolbar {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fancybox-button--close {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  color: #333;
+  margin: 16px;
+  width: 48px;
+  height: 48px;
+}
+
+.fancybox-button--close:hover {
+  background: #fff;
+  color: #000;
+}
+
+.fancybox-button--close svg {
+  transform: scale(1.15);
+}
+
 @media (max-width: 1300px) {
   .project-row {
     gap: 32px;
@@ -742,12 +766,21 @@ button[type=submit]:hover {
   body {
     padding: 0 16px;
   }
+  .fancybox-button--close {
+    margin: 12px;
+    width: 44px;
+    height: 44px;
+  }
   h1 {
-    font-size: 24px;
-    font-size: 2.4rem;
-    line-height: 32px;
+    font-size: 22px;
+    font-size: 2.2rem;
+    line-height: 30px;
     padding: 20px 0 10px;
     font-weight: 400;
+  }
+  .article-container h1 {
+    font-size: 22px !important;
+    line-height: 30px !important;
   }
   h2 {
     font-size: 20px;
