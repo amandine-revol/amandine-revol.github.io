@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="icon" type="image/png" href="../img/fav.png" />
+    <title>Building an AI Skill for the UX Team - Amandine Revol</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="../lightbox.js" defer></script>
+</head>
+<body class="article-page">
+    <header>
+        <div class="title"><a href="../index.html"><img src="../img/profile.png" alt=""><span>Amandine Revol</span></a></div>
+        <details class="nav-menu" open>
+            <summary aria-label="Open menu">Menu</summary>
+            <nav>
+                <a href="../index.html" class="active">Work</a>
+                <a href="../about.html">About</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+        </details>
+    </header>
+
+    <div class="header_project">
+        <div class="imgtop_center">
+            <img src="img/uxw-hero.png" alt="From manual checks to consistent UX copy">
+        </div>
+    </div>
+
+    <div id="container_portfolio">
+        <div class="project_title">
+            <h1>Building an AI skill for the UX team: checking new copy against live codebase strings</h1>
+        </div>
+
+        <p>The biggest improvement in our copy workflow came from one simple change: checking new design copy against live codebase strings before review.</p>
+        <p>This reduced inconsistencies, cut back-and-forth, and shortened review time.</p>
+
+        <h2>The core problem</h2>
+        <p>We already used AI to support copy work, but it missed one key source of truth: live product copy in code.</p>
+        <p>As a result, we often created new variants of strings that already existed in production, and frontend had to catch these mismatches later.</p>
+
+        <h2>The solution</h2>
+        <p>I built an internal AI skill.</p>
+        <p>It reviews, writes, and translates copy, but always checks against live and trusted sources first.</p>
+        <p>It uses:</p>
+        <ul>
+            <li>Team UX writing guidelines</li>
+            <li>Brand voice guidelines</li>
+            <li>FR/DE language rules</li>
+            <li>Live glossary terms</li>
+            <li>Existing frontend strings</li>
+        </ul>
+
+        <h2>How it works</h2>
+        <p>The workflow accepts different inputs: text, screenshot, Figma frame, or prototype content.</p>
+        <p>It compares proposed copy with existing codebase strings first, then checks tone, glossary, and language rules.</p>
+        <p>This is what it returns:</p>
+        <ul>
+            <li>What is wrong</li>
+            <li>Why it is wrong</li>
+            <li>What to change</li>
+            <li>A suggested rewrite</li>
+        </ul>
+        <p>Bonus: using Figma MCP, if you share a Figma frame, the skill can duplicate it, update the copy, and generate a new ready-to-review design automatically. This saves a lot of time.</p>
+
+        <h2>Why this worked</h2>
+        <p>The main value was consistency. The skill checks suggestions against real copy already used in production and explains the reason behind each recommendation. That made the output easier to trust and easier to use across the team.</p>
+
+        <h2>Impact</h2>
+        <a data-fancybox="gallery" href="img/uxw-impact.png"><img src="img/uxw-impact.png" alt="Impact of the AI copy skill"></a>
+
+        <h2>What I learned</h2>
+        <ul>
+            <li>Human review remains essential, especially for tone.</li>
+            <li>By leveraging Figma MCP, the skill duplicates the frame, updates the copy, and generates a review-ready design draft automatically, removing repetitive manual work.</li>
+            <li>"Don't invent" is as important as "suggest better copy."</li>
+        </ul>
+        <p>But this workflow removes repetitive checks and helps the team scale copy quality more reliably.</p>
+
+        <h2>What I would improve next</h2>
+        <ul>
+            <li>Better handling of multilingual edge cases</li>
+            <li>Stronger checks for feature-specific wording</li>
+            <li>Simple reporting on recurring copy issues, to spot patterns and coach the team</li>
+        </ul>
+
+        <div class="nav-back" style="margin-top: 3em; border-top: 1px solid #eee; padding-top: 2em;">
+            <a href="../index.html">Back home</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_center">
+            <span class="right">Copyright 2026 Amandine Revol</span>
+        </div>
+    </footer>
+    <script src="../menu.js"></script>
+</body>
+</html>

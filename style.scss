@@ -169,9 +169,6 @@ hr {
     padding: 0;
 }
 .title{
-    display: flex;
-    align-items: center;
-    gap: 10px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -185,6 +182,10 @@ hr {
     object-fit: cover;
 }
 .title a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font: inherit;
     text-decoration: none;
     color: $selected-color;
 }
@@ -295,6 +296,9 @@ img {
 #container_home .project img[src="img/vibe_coding2.png"] {
     background: #EDEDED;
 }
+#container_home .project img[src="img/uxw-skills.png"] {
+    background: #F7F6FA;
+}
 
 .project-row--single .project-empty {
     min-height: 1px;
@@ -339,7 +343,40 @@ img {
     margin-top:100px;
 }
 .article-page .header_project{
-    background: #F7F3EA;
+    background: #F7F6FA;
+}
+.article-page #container_portfolio{
+    margin-top:56px;
+}
+.article-page #container_portfolio h2{
+    margin-top:1.5em;
+    margin-bottom:0.6em;
+    line-height:1.3;
+}
+.article-page #container_portfolio p{
+    line-height:1.7;
+    margin-bottom:1em;
+}
+.article-page #container_portfolio ul{
+    margin-bottom:1.5em;
+    margin-left:1.5em;
+    line-height:1.7;
+}
+.article-page #container_portfolio li{
+    margin-bottom:0.5em;
+}
+.nav-back{
+    max-width:980px;
+    margin:56px auto 0;
+    padding-top:24px;
+    border-top:1px solid #eee;
+}
+.nav-back a{
+    color:$txt-color;
+    text-decoration:none;
+}
+.nav-back a:hover{
+    text-decoration:underline;
 }
 .container_project{
     //@include website-size();
@@ -426,7 +463,7 @@ footer {
     max-width: 760px;
     font-size: 20px;
     line-height: 1.6;
-    font-weight: 400;
+    font-weight: 300;
 }
 .intro2{
     font-size:22px;
