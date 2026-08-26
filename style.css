@@ -1068,9 +1068,12 @@ button[type=submit]:hover {
     position: fixed;
     inset: 0;
     z-index: 20;
-    background: rgba(255, 255, 255, 0.78);
+    background: rgba(255, 255, 255, 0.7);
     -webkit-backdrop-filter: blur(8px);
             backdrop-filter: blur(8px);
+  }
+  header:has(.nav-menu[open]) {
+    z-index: 20;
   }
   .nav-menu summary {
     display: block;
@@ -1129,14 +1132,16 @@ button[type=submit]:hover {
     position: absolute;
     top: 50%;
     right: auto;
+    bottom: auto;
     left: 50%;
     min-width: 0;
     padding: 0;
     background: transparent;
     border: 0;
     box-shadow: none;
-    transform: translate(-50%, -50%);
+    transform: none;
     align-items: center;
+    transform: translate(-50%, -50%);
   }
   .nav-menu nav a {
     padding: 8px 16px;
@@ -1331,6 +1336,25 @@ body.about footer {
   margin-right: -100px;
 }
 
+body.home > footer .footer-grid,
+body.home > footer .footer-bottom {
+  width: 100%;
+  max-width: 1400px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body.home > footer .footer-grid::before {
+  right: 0;
+  left: 0;
+}
+
+body.home > footer {
+  width: calc(100% + 200px);
+  margin-left: -100px;
+  margin-right: -100px;
+}
+
 .about-profile {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 340px;
@@ -1474,6 +1498,25 @@ body.about footer {
 }
 
 @media (max-width: 900px) {
+  body.home > footer {
+    width: calc(100% + 100px);
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+
+  body.home > footer .footer-grid,
+  body.home > footer .footer-bottom {
+    width: 100%;
+    max-width: 1400px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  body.home > footer .footer-grid::before {
+    right: 50px;
+    left: 50px;
+  }
+
   body.about footer {
     margin-left: -50px;
     margin-right: -50px;
@@ -1486,6 +1529,25 @@ body.about footer {
 }
 
 @media (max-width: 700px) {
+  body.home > footer {
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  body.home > footer .footer-grid,
+  body.home > footer .footer-bottom {
+    width: 100%;
+    max-width: 1400px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  body.home > footer .footer-grid::before {
+    right: 16px;
+    left: 16px;
+  }
+
   body.about footer {
     margin-left: -16px;
     margin-right: -16px;
