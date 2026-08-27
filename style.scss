@@ -586,6 +586,27 @@ footer {
 .project_title{
     margin-bottom:56px;
 }
+.brand-refresh-page .project_title{
+    margin-bottom:16px;
+}
+.article-page.brand-refresh-page #container_portfolio .project-meta{
+    margin-bottom:72px;
+}
+.brand-refresh-page .project-details strong{
+    font-weight:600;
+}
+.article-page.brand-refresh-page #container_portfolio .brand-refresh-caption{
+    margin-top:16px;
+    margin-bottom:56px;
+    text-align:center;
+}
+.article-page.brand-refresh-page #container_portfolio h3{
+    font-size:24px;
+    line-height:30px;
+    font-weight:600;
+    margin-top:48px;
+    margin-bottom:16px;
+}
 
 /* Project card titles: reduced size for better balance */
 .project h2{
@@ -1204,6 +1225,177 @@ hr {
 .about-story p {
     color: #555555;
     font-size: 18px;
+    margin-bottom: 24px;
+    line-height: 1.55;
+}
+
+.about-profile {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 72px;
+    align-items: start;
+    margin-top: 72px;
+}
+
+.about-story {
+    max-width: 520px;
+}
+
+.about-story .about-lead {
+    margin-bottom: 36px;
+    color: #333333;
+    font-size: 25px;
+    line-height: 1.25;
+    font-weight: 400;
+}
+
+.about-story strong {
+    color: #555555;
+    font-weight: 600;
+}
+
+.about-links {
+    margin-top: 36px;
+}
+
+.about-aside {
+    width: 100%;
+}
+
+.about-portrait {
+    width: 100% !important;
+    max-width: none !important;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 0 0 64px;
+}
+
+.key-facts {
+    border-top: 1px solid #E6E9F0;
+}
+
+.key-facts dl {
+    display: grid;
+    margin: 0;
+}
+
+.key-facts dl div {
+    display: block;
+    padding: 22px 0 24px;
+    border-bottom: 1px solid #E6E9F0;
+}
+
+.key-facts dt {
+    margin-bottom: 10px;
+    color: #999EA8;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+.key-facts dd {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.about-testimonials {
+    margin-top: 128px;
+    padding-top: 40px;
+}
+
+.section-heading {
+    margin-bottom: 32px;
+}
+
+.section-kicker {
+    display: block;
+    margin-bottom: 10px;
+    color: #777D8D;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.about-testimonials h2 {
+    margin: 0;
+    color: #333333;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.about-testimonials .testimonials-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.about-testimonials .testimonial-card {
+    width: auto;
+    min-height: 100%;
+    margin: 0;
+    padding: 28px;
+    border: 1px solid #E6E9F0;
+    border-radius: 12px;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.72);
+    box-sizing: border-box;
+}
+
+.about-testimonials blockquote {
+    margin: 0 0 28px;
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.about-testimonials figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+.about-testimonials figcaption span {
+    color: #777D8D;
+    font-size: 13px;
+}
+
+@media (max-width: 900px) {
+    .about-profile {
+        grid-template-columns: minmax(0, 1fr) 280px;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-profile {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        margin-top: 40px;
+    }
+
+    .about-story,
+    .about-aside {
+        max-width: none;
+    }
+
+    .about-portrait {
+        max-width: 360px !important;
+        margin-bottom: 40px;
+    }
+
+    .about-testimonials {
+        margin-top: 72px;
+    }
+
+    .about-testimonials .testimonials-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 .key-facts dd {
