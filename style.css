@@ -1475,6 +1475,8 @@ hr {
 }
 
 .about-testimonials .testimonial-card {
+  display: flex;
+  flex-direction: column;
   width: auto;
   min-height: 100%;
   margin: 0;
@@ -1489,22 +1491,23 @@ hr {
 .about-testimonials blockquote {
   margin: 0 0 28px;
   color: #555555;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.55;
 }
 
 .about-testimonials figcaption {
   display: flex;
   flex-direction: column;
+  margin-top: auto;
   gap: 4px;
   color: #333333;
-  font-size: 14px;
-  line-height: 1.35;
+  font-size: 18px;
+  line-height: 1.55;
 }
 
 .about-testimonials figcaption span {
   color: #777D8D;
-  font-size: 13px;
+  font-size: 18px;
 }
 
 @media (max-width: 900px) {
