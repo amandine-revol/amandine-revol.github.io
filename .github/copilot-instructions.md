@@ -27,6 +27,12 @@ Because there's no templating, the header/nav and footer markup is duplicated ac
 6. **No dead code.** Don't leave commented-out old versions, unused CSS classes, or console.log debugging statements behind after a change.
 7. **Comment non-obvious sections briefly** (why, not what) — especially in CSS where a rule exists to fix a specific layout quirk.
 
+## Accessibility requirements
+
+- Follow WCAG 2.2 AA practices for every change: use sufficient color contrast (at least 4.5:1 for normal text and 3:1 for large text), preserve visible keyboard focus, and do not rely on color alone to communicate meaning.
+- Use semantic HTML, correct heading order, descriptive image `alt` text, accessible link text, and labels for controls. Preserve keyboard access and sensible focus order for menus, dialogs, galleries, and interactive elements.
+- Check responsive layouts at narrow and wide viewports, including text wrapping, touch target size, zoom, and horizontal overflow. Run an accessibility check when the change affects user-facing markup or interaction.
+
 ## Keep things short — avoid bloated files
 
 - If a project page's HTML is growing very long, break it into clearly headed sections (Introduction, Research, Design, Final design, Conclusion — this is already the pattern in `note.html`) with a heading comment above each, rather than one long undifferentiated block.

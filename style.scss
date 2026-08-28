@@ -391,6 +391,9 @@ img {
     line-height:1.7;
     margin-bottom:1em;
 }
+.article-page strong {
+    font-weight:600;
+}
 .article-page #container_portfolio ul{
     margin-bottom:1.5em;
     margin-left:1.5em;
@@ -609,6 +612,37 @@ footer {
 .article-page.brand-refresh-page #container_portfolio .project-meta{
     margin-bottom:72px;
 }
+.article-page.brand-refresh-page #container_portfolio .project-details {
+    line-height: 1.85;
+}
+.brand-refresh-impact {
+    margin: 32px 0 48px;
+    padding: 12px 32px;
+    border-radius: 8px;
+    background: #F7F6FA;
+}
+.article-page.brand-refresh-page #container_portfolio .brand-refresh-impact h2 {
+    margin: 16px 0;
+    color: #333333;
+    font-size: 28px;
+    line-height: 1.2;
+}
+.brand-refresh-impact ul {
+    display: grid;
+    gap: 16px;
+    margin: 0;
+    padding-left: 24px;
+    list-style: disc;
+}
+.brand-refresh-impact li {
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.55;
+}
+.brand-refresh-impact strong {
+    color: #333333;
+    font-weight: 600;
+}
 .brand-refresh-page .project-details strong{
     font-weight:600;
 }
@@ -633,6 +667,40 @@ footer {
     margin-top:12px;
     margin-bottom:12px;
     font-weight:600;
+}
+.brand-refresh-project .brand-refresh-summary {
+    max-width: none;
+    margin: 8px 0 24px;
+    color: #555555;
+    font-size: 18px;
+    line-height: 1.55;
+    white-space: nowrap;
+}
+.brand-refresh-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    padding: 8px 0;
+}
+.brand-refresh-metric + .brand-refresh-metric {
+    padding-left: 24px;
+    border-left: 1px solid #E6E9F0;
+}
+.brand-refresh-metric {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.brand-refresh-metric strong {
+    color: #6d1225;
+    font-size: 28px;
+    line-height: 1.1;
+    font-weight: 600;
+}
+.brand-refresh-metric span {
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.35;
 }
 .project_left{
     max-width: 50%;
@@ -701,10 +769,11 @@ h6{
 }
 .project-tag {
     display: inline-block;
-    padding: 2px 12px;
-    border: 1px solid #777D8D;
+    padding: 4px 14px;
+    border: 0;
     border-radius: 999px;
-    color: #555555;
+    color: #333333;
+    background: #F0F0F0;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -1126,6 +1195,23 @@ input[type=text], textarea {
     }
     .intro {
         margin-bottom: 56px;
+    }
+    .brand-refresh-project .brand-refresh-summary {
+        margin-bottom: 20px;
+        font-size: 16px;
+        white-space: normal;
+    }
+    .brand-refresh-metrics {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding-top: 8px;
+    }
+    .brand-refresh-metric + .brand-refresh-metric {
+        padding-left: 0;
+        border-left: 0;
+    }
+    .brand-refresh-metric strong {
+        font-size: 24px;
     }
     .intro-lead {
         font-size: 30px;
