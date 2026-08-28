@@ -640,6 +640,14 @@ footer {
 .homepage-section > .project-row + .project-row {
     margin-top: 112px;
 }
+.case-studies-section > .project h2 {
+    font-size: 24px;
+    line-height: 1.2;
+}
+.ai-practice-section > .project-row .project h2 {
+    font-size: 24px;
+    line-height: 1.2;
+}
 .intro2{
     font-size:22px;
     font-size: 2.2rem;
@@ -685,7 +693,19 @@ footer {
     border-radius: 8px;
     background: #F7F6FA;
 }
+.company-impact-section {
+    margin: 32px 0 48px;
+    padding: 12px 32px;
+    border-radius: 8px;
+    background: #F7F6FA;
+}
 .article-page.brand-refresh-page #container_portfolio .brand-refresh-impact h2 {
+    margin: 16px 0;
+    color: #333333;
+    font-size: 28px;
+    line-height: 1.2;
+}
+.article-page #container_portfolio .company-impact-section h2 {
     margin: 16px 0;
     color: #333333;
     font-size: 28px;
@@ -707,7 +727,29 @@ footer {
     color: #333333;
     font-weight: 600;
 }
+.company-impact-section ul {
+    display: grid;
+    gap: 16px;
+    margin: 0;
+    padding-left: 24px;
+    list-style: disc;
+}
+.company-impact-section li {
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.55;
+}
+.company-impact-section strong {
+    color: #333333;
+    font-weight: 600;
+}
 .brand-refresh-page .project-details strong{
+    font-weight:600;
+}
+.company-profile-page #container_portfolio .project-details {
+    line-height: 1.85;
+}
+.company-profile-page .project-details strong{
     font-weight:600;
 }
 .article-page.brand-refresh-page #container_portfolio .brand-refresh-caption{
@@ -767,7 +809,7 @@ footer {
 }
 .brand-refresh-metric strong {
     color: #333333;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 1.1;
     font-weight: 600;
 }
@@ -781,7 +823,7 @@ footer {
     gap: 4px;
 }
 .company-impact-metric strong {
-    font-size: 28px;
+    font-size: 20px;
     line-height: 1.1;
     font-weight: 600;
 }
@@ -1279,6 +1321,15 @@ input[type=text], textarea {
     #container_portfolio {
         margin-top: 16px;
     }
+    .company-profile-page #container_portfolio {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .company-profile-page table {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+    }
     .article-page.brand-refresh-page #container_portfolio {
         margin-top: 24px;
     }
@@ -1333,7 +1384,10 @@ input[type=text], textarea {
         padding-left: 0;
         border-left: 0;
     }
-    .brand-refresh-metric strong {
+    .case-studies-section > .project h2 {
+        font-size: 24px;
+    }
+    .ai-practice-section > .project-row .project h2 {
         font-size: 24px;
     }
     .intro-lead {

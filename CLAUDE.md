@@ -1,6 +1,6 @@
-# AI Guidelines — amandine-revol.github.io
+# Claude Guidelines — amandine-revol.github.io
 
-These are instructions for any AI tool (Claude, Cursor, Copilot, etc.) making changes to this portfolio site. Read this before editing files.
+These are instructions for Claude making changes to this portfolio site. Read this before editing files.
 
 ## About this project
 
