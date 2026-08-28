@@ -5,12 +5,12 @@
     }
 
     const projectPath = window.location.pathname.includes('/projects/') ? '' : 'projects/';
-    const homePath = projectPath ? '../index.html' : 'index.html';
+    const homePath = window.location.pathname.includes('/projects/') ? '../index.html' : 'index.html';
     const caseStudies = [
+        ['Brand refresh', projectPath + 'jobs-brand-refresh.html'],
         ['Company profiles', projectPath + 'company2.html'],
         ['Accessibility initiative', projectPath + 'a11y.pdf'],
-        ['Team collaboration', projectPath + 'note.html'],
-        ['Instagram publishing', projectPath + 'instagram.html']
+        ['Team collaboration', projectPath + 'note.html']
     ];
     const articles = [
         ['Conversation mining with AI', projectPath + 'cv-ai-mining.html'],

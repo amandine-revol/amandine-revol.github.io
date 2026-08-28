@@ -253,7 +253,7 @@ img {
     aspect-ratio: 2568/1368;
     border: 1px solid #ccc;
     border-radius: 16px;
-    background: #0E4D25;
+    background: #FFFFFF;
 }
 
 .project-row .project img {
@@ -272,6 +272,20 @@ img {
 
 #container_home .project img {
     transition: opacity 0.25s ease;
+    border-radius: 16px !important;
+    height: auto;
+    max-height: none;
+    margin: 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom:16px;
+}
+#container_home .margin20 {
+    aspect-ratio: auto;
+    background: transparent;
+    border: 0;
+    border-radius:8px;
+    margin-bottom: 0;
 }
 #container_home .project .margin20 {
     position: relative;
@@ -352,6 +366,7 @@ img {
     width: 100%;
     max-width: 980px;
     height: auto;
+    background: #FFFFFF;
 }
 .header_project .imgtop_center{
     width: 100%;
@@ -362,6 +377,7 @@ img {
     width: 100%;
     max-width: 1400px;
     height: auto;
+    background: #FFFFFF;
 }
 .article-page #container_portfolio{
     margin-top:56px;
@@ -913,6 +929,12 @@ input[type=text], textarea {
     body {
         padding: 0 16px;
     }
+    footer {
+        margin-top:24px;
+    }
+    #container_home .project img {
+        border-radius:8px !important;
+    }
     body.home::before,
     body.about::before {
         height: 700px;
@@ -920,15 +942,29 @@ input[type=text], textarea {
     header {
         justify-content: space-between;
     }
+    body.home > header,
+    body.about > header {
+        z-index: 20;
+    }
     .footer-grid{
         grid-template-columns:1fr;
-        gap:36px;
-        padding:48px 20px 36px;
+        gap:24px;
+        padding:32px 20px 24px;
+    }
+    .footer-group h2 {
+        font-size:14px;
+    }
+    .footer-group a {
+        font-size:16px;
     }
     .footer-bottom{
-        padding:16px 20px 24px;
+        padding:12px 20px 16px;
         flex-direction:column;
         gap:8px;
+        font-size:12px;
+    }
+    .footer-bottom a {
+        font-size:14px;
     }
     .nav-menu {
         display: block;
@@ -938,9 +974,7 @@ input[type=text], textarea {
         position: fixed;
         inset: 0;
         z-index: 20;
-        background: rgba(255, 255, 255, 0.78);
-        -webkit-backdrop-filter: blur(8px);
-                backdrop-filter: blur(8px);
+        background: rgba(255, 255, 255, 0.9);
     }
     .nav-menu summary {
         display: block;
@@ -1081,6 +1115,13 @@ input[type=text], textarea {
     }
     #container_portfolio {
         margin-top: 16px;
+    }
+    .article-page.brand-refresh-page #container_portfolio {
+        margin-top: 24px;
+    }
+    .article-page.brand-refresh-page #container_portfolio h3 {
+        font-size: 18px;
+        line-height: 24px;
     }
     .intro {
         margin-bottom: 56px;
