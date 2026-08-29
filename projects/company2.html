@@ -83,7 +83,7 @@
             <h2 id="company-impact-title">Impact</h2>
             <ul>
                 <li>Grew applications from company profile pages by <strong>5%</strong>, beating the original <strong>3% target</strong>.</li>
-                <li>Doubled the time job seekers spent on the page after moving photos and reviews to the top.</li>
+                <li><strong>Doubled the time</strong> job seekers spent on the page, a sign they stayed on-site instead of leaving to check competitor reviews.</li>
                 <li>Surveyed <strong>100 job seekers</strong> to find the gap: <strong>80%</strong> check reviews and benefits before applying, and the old page buried both at the bottom.</li>
             </ul>
         </section>
@@ -100,7 +100,7 @@
                 <div class="block">
                     <h2>The problem: outdated company profiles penalize job applications</h2>
                     <p>
-                        Job seekers already treat a company profile as a trust check before applying, and when jobs.ch and jobup.ch couldn't answer basic questions like what a company pays or what it's actually like to work there, they left to check reviews on other platforms instead. Every one of those trips off-platform was a job seeker we risked losing to a competitor before they came back to apply.
+                        Job seekers already treat a company profile as a trust check before applying, and when jobs.ch and jobup.ch couldn't answer basic questions like what are the benefits or what it's actually like to work there, they left to check reviews on other platforms instead. Every one of those trips off-platform was a job seeker we risked losing to a competitor before they came back to apply.
                     </p>
                     <br>
                     <p>
@@ -111,7 +111,7 @@
                 <div class="block">
                     <h2> Solution</h2>
                     <p>
-                        Outdated company profiles were failing to engage job seekers and led to fewer applications. I redesigned the experience with clearer ratings, a media gallery, and structured job listings to build trust and transparency. Six months after launch, time spent on profiles doubled and applications from profile pages increased by +5%, surpassing my initial goal.
+                        Outdated company profiles were failing to engage job seekers and led to fewer applications. I redesigned the experience with clearer ratings, a media gallery, structured job listings, and surfaced benefit tags that were already being collected but never shown, to build trust and transparency.
                     </p>
                 </div>
 
@@ -119,10 +119,7 @@
                 <div class="block">
                     <h2> Goals and success metrics: increasing engagement and applications</h2>
                     <p>
-                        My main goal was to give job seekers all the essential insights they needed about a potential employer right on the company profile page, so they felt confident enough to hit "apply" instead of leaving to research elsewhere.
-                        <br><br>
-
-                        To measure success, I was targeting a <span class="bold">3% increase in job applications</span> from company profile pages.
+                        To measure success, my team was targeting a <span class="bold">3% increase in job applications</span> from company profile pages.
                     </p>
                 </div>
 
@@ -151,13 +148,13 @@
             </div>
 
             <a data-fancybox="gallery" href="img/company-survey.png"><img src="img/company-survey.png"></a>
-            <p class="margin32_bottom">The survey revealed that 80% of job seekers looked at reviews before applying to a job. </p>
+            <p class="margin32 margin32_bottom">The survey revealed that 80% of job seekers looked at reviews before applying to a job. </p>
             <br>
 
             <div class="block">
                 <h2>Current platform capabilities and gaps: identifying areas for improvement</h2>
                 <p>
-                    At the moment, jobs.ch and jobup.ch don't provide detailed descriptions of employee benefits, which is something job seekers said they were interested in. There is a company overview and some photos and videos of the team and workspace, but they're buried at the bottom of the page and hard to find. They needed to be more prominent to help job seekers make informed decisions.
+                    Mapping what job seekers said against what jobs.ch and jobup.ch actually showed made the gaps clear:
                 </p>
                 <br>
 
@@ -219,11 +216,11 @@
 
               </table>
 
-              <p class="margin32_bottom">
-                  Benefits were the clearest gap. Job seekers ranked them as one of the things they most wanted detail on, but on jobs.ch and jobup.ch, companies can only pick from a fixed list of generic benefit tags. There's no way for a company to explain what makes their version of that benefit worth knowing about, and some of those tags are already collected today but never shown on the job seeker facing profile at all.
+              <p class="margin32 margin32_bottom">
+                  Benefits were the clearest gap. Job seekers ranked them as one of the top things they wanted detail on. But on jobs.ch and jobup.ch, companies could only pick from a fixed list of generic benefit tags, with no way to explain what made their version of a benefit worth knowing about. Some of those tags were already being collected, but never shown on the job seeker facing profile at all.
               </p>
               <p class="margin32_bottom">
-                  Letting companies write their own benefit descriptions meant redesigning the B2B input tool and getting existing clients to fill it in, work that depended on B2B's roadmap and client adoption, not just my team, so it wasn't realistic for this first release. I scoped this round to what I could ship without that dependency: surfacing the benefit tags that were already being collected but never displayed. I proposed the free-text version as a phase 2 to the B2B team, backed by the survey data showing benefits was the top thing job seekers wanted more detail on.
+                  Letting companies write their own benefit descriptions meant redesigning the B2B input tool and getting existing clients to fill it in. That work depended on B2B's roadmap and client adoption, not just my team, so it wasn't realistic for this first release. Instead, I scoped this round to what I could ship without that dependency: surfacing the benefit tags that were already being collected but never displayed. I proposed the free-text version as a phase 2 to the B2B team, backed by survey data showing benefits was the top thing job seekers wanted more detail on.
               </p>
             </div>
         
@@ -237,8 +234,8 @@
             <div class="block">
                 <p>
                     1. How could I quickly give job seekers a sense of what it would be like to work at the company using photos and videos, while making the overall page more engaging and visually appealing?
-                    <br>
-                    2. How could I improve the display of overall ratings and show other relevant information that job seekers need to assess a company?<br>
+                    <br><br>
+                    2. How could I improve the display of overall ratings and show other relevant information that job seekers need to assess a company?<br><br>
                     3. Companies post an average of 8 to 40 job ads, making it hard for job seekers to find relevant positions. Data showed that users weren't using the filter option.
                 </p>
             </div>
@@ -255,20 +252,11 @@
 
                 <br><br>
                 <p>
-                    To catch user attention and give a taste of what it would be like to work there, photos and videos are displayed as a media gallery at the top of the page. To control the length, there is a button to see all media, which opens the media viewer.
+                    To catch user attention and give a taste of what it would be like to work there, photos and videos are displayed as a media gallery at the top of the page, ahead of the written company overview, since the survey showed visuals did more to help job seekers picture themselves in the role than text alone. To control the length, there is a button to see all media, which opens the media viewer.
                 </p>
                 <br>
 
                 <p>
-                    
-
-                    <span class="bold">Navigation updates:</span>
-                    <ul class="square">
-                        <li>Removed videos tab: Videos are now at the top of the Overview page.</li>
-                        <li>"Job Offers" is now "Jobs": For consistency.</li>
-                        <li>Removed contact tab: Job-specific contacts made the general contact tab unnecessary.</li>
-                    </ul>  
-                    <br>
                     <span class="bold">New design components for the design system:</span><br>
                     Media gallery and viewer: These are documented with guidelines, behavior, best practices, and accessibility rules, including alt text for images and keyboard navigation.
                     <br><br>
@@ -290,21 +278,22 @@
                 </p>
                 <br>
                 <p>
-                    In V1, I added the review count, replaced the colour-coded reviewer legend with a text tag on each review ("Employee", "Freelance") so reviewer type no longer depended on colour alone, and surfaced the sub-category ratings job seekers had asked for. Both changes tested well because they were directly relevant to how job seekers evaluate a company, and the reviewer tag made the feedback feel more credible.
+                    In V1, I made three changes: added the number of reviews, replaced the colour-coded reviewer legend with a reviewer tag on each review (like "Employee" or "Candidate") so people no longer had to rely on colour to tell who left it, and surfaced the sub-category ratings job seekers had asked for. Both changes tested well: the sub-category ratings were directly useful to how job seekers evaluate a company, and the reviewer tag made reviews feel more credible.
                 </p>
                 <br>
                 <p>
                     <span class="bold">What user testing on V1 found:</span>
                 <ul class="square">
-                    <li>Users weren't sure if the number next to a sub-category (e.g. "2 ★") was a score or a count of ratings.</li>
+                    <li>Users weren't sure if "20" next to 5★ in the overall breakdown was a count of reviews or a score.</li>
+                    <li>Sub-category scores like "2 ★" for Management style had the same problem, ambiguous between a score and a count.</li>
                     <li>Black stars didn't read as a rating at all, the colour carried no meaning.</li>
                 </ul>
                 </p>
                 <br>
                 <p>
-                    <span class="bold">Solution for V2 (final):</span>
+                    <span class="bold">I iterated on V1 based on that feedback, solution for V2:</span>
                 <ul class="square">
-                    <li>Switched from raw counts to percentages for the rating breakdown, so "150 ratings" became "8% positive ratings", unambiguous at a glance.</li>
+                    <li>Switched from raw counts to percentages for the star breakdown, so "20 five-star ratings" became "70% five-star ratings", unambiguous at a glance.</li>
                     <li>Standardised every score to one decimal format, like "2.0" instead of "2", so scores and counts couldn't be confused.</li>
                     <li>Changed stars from black to gold so colour reinforced the rating instead of sitting neutral.</li>
                 </ul>
@@ -349,7 +338,7 @@
 
             <div class="block">
 
-               After 6 months live, <span class="bold"> company profiles generated +5% more applications (vs. +3% target) and doubled user engagement time</span>. Beyond that, the project delivered reusable design system components and set new internal standards for employer branding across the platform. The improved profiles were quickly adopted by the sales team in client pitches, strengthening JobCloud’s positioning with employers
+               After 6 months live, <span class="bold"> company profiles generated +5% more applications (vs. +3% target) and doubled user engagement time</span>, directly addressing the original risk of job seekers leaving the platform to research employers elsewhere. Beyond that, the project delivered reusable design system components and set new internal standards for employer branding across the platform. The improved profiles were quickly adopted by the sales team in client pitches, strengthening JobCloud’s positioning with employers
             </div>
 
 

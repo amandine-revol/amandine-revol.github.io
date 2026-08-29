@@ -60,6 +60,10 @@ Rules:
 - Don't introduce a different lightbox/gallery library — this one is already wired up via `lightbox.js`, it just needs the attribute added on the markup side.
 - As a first pass, also retrofit this onto the existing images on `note.html` and `instagram.html`, since they currently lack `data-fancybox` entirely.
 
+## Writing style for case study copy
+
+- Don't use em dashes in case study prose. Use a comma, period, or parentheses instead.
+
 ## Before you're done — verify
 
 - Open every page you touched and click each image to confirm the lightbox opens (not a raw-image navigation).
