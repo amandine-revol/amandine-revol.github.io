@@ -52,8 +52,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
-    
+<body class="instagram-page">
+
     <header>
         <div class="title"><a href="../index.html"><img src="../img/profile.png" alt=""><span>Amandine Revol</span></a></div>
           
@@ -69,23 +69,35 @@
 
     <!--Header image-->
     <div class="header_project">
-        <img src="img/instagram.png">
-    <div>
-    
+        <img src="img/instagram.png" alt="">
+    </div>
+
     <!--940 wrap--> 
     <div id="container_portfolio">
         <!--title--> 
         <div class="project_title">
             <h1>Redesigning Levuro's main failure path: The connection of an Instagram profile and the definition of a publishing method.</h1>
         </div>
-    
-             <!--orange title--> 
+
+        <p class="project-details"><strong>My role:</strong> UX Lead, the sole designer at this early-stage startup. I identified and prioritized the problem, then owned the end-to-end design, working closely with a cross-functional team of 4 developers and the CEO.<br><strong>When:</strong> 2022.<br><strong>Scope:</strong> Instagram profile connection and publishing setup, across Levuro's web and mobile apps.</p>
+
+        <section class="instagram-impact" aria-labelledby="instagram-impact-title">
+            <h2 id="instagram-impact-title">Impact</h2>
+            <ul>
+                <li>Grew Instagram accounts with a defined publishing method from <strong>30% to over 50%</strong> within a few months, hitting our original <strong>50% target</strong>.</li>
+                <li>Getting there took more than the redesign: we also <strong>emailed users</strong> whose Instagram profile still lacked a publishing method, inviting them to set one up.</li>
+                <li>Cut Instagram-related customer support requests <strong>by half</strong>, pairing the product changes with a rebuilt help center.</li>
+                <li>Lowered the share of accounts with an Instagram profile connected that got deleted from <strong>63% to 40%</strong>, still an area we kept pushing on.</li>
+            </ul>
+        </section>
+
+             <!--orange title-->
                 <h4>Introduction</h4>
 
                 <div class="block">
                     <h2>About the company</h2>
                     <p>
-                        Levuro is a social media and live stream management tool for Instagram, Twitter, Facebook, LinkedIn, and YouTube. Users can publish via web or mobile apps.
+                        Levuro is a Swiss startup building a social media and live stream management tool for Instagram, Twitter, Facebook, LinkedIn, and YouTube. Users can publish via web or mobile apps.
                     </p>
                 </div>
 
@@ -103,50 +115,29 @@
                     </p>
                 </div>
 
-                <div class="block">
-                    <h2>Roles and responsibilities</h2>
-                    <p>
-                        As the sole UX designer, I led user research, conducted usability testing, designed the new flow, and created high-fidelity prototypes. I collaborated with developers and stakeholders to ensure alignment and smooth implementation.
-                        <br><br>
-
-                        This project was collaborative and agile, with a cross-functional team (4 developers and the CEO). I leveraged everyone's expertise and knowledge to make the best decisions.
-                    </p>                   
-                </div>
-
-
-            <!--separator--> 
+            <!--separator-->
             <hr/> 
             
             <h4>Context</h4>
 
             <div class="block">
-                <h2>How I discovered the problem?</h2>
+                <h2>The data: what analytics showed</h2>
                 <p>
-                    I presented the problem during monthly product discussions using data analytics, beta user feedback, and customer support reports to support the case. <span class="bold"> Key finding: 70% of Instagram users couldn’t publish posts through Levuro, leading to account deletions.</span>
-                </p>
-                <br>
-
-            </div>
-
-            <div class="block">
-                <h2>User Impact</h2>
-                <p>
-                    The graphs show that half of Levuro’s users have an Instagram account, but 70% of these accounts don’t have a publishing method for posting on Instagram. It means that out of all the Instagram accounts connected to Levuro, 70% can’t publish posts using Levuro. 
-                    As a result, Instagram users are deleting their accounts.
+                    I surfaced this during monthly product discussions using data analytics, beta user feedback, and customer support reports. <span class="bold">Key finding: half of Levuro’s users had a connected Instagram account, but 70% of those accounts had no publishing method set up, meaning they couldn’t publish through Levuro at all. Users stuck this way were deleting their accounts.</span>
                 </p>
             </div>
 
             <div class="margin56">
-                <a data-fancybox="gallery" href="img/ig_analytics1.png"><img class="margin32" src="img/ig_analytics1.png"></a>
+                <a data-fancybox="gallery" href="img/ig_analytics1.png"><img class="margin32" src="img/ig_analytics1.png" alt="Analytics dashboard showing the share of Levuro users with a connected Instagram account and the percentage still missing a publishing method"></a>
             </div>
 
             <div class="block">
-                <h2>Business Impact</h2>
+                <h2>The why: what user testing revealed</h2>
                 <p>
-                    More than half of Levuro users have an Instagram account. High competition for social media tools made it critical to fix this issue. By improving the experience, we aimed to reduce churn and convert more users to paid accounts.
+                    The data told me what was broken, but not why. With competition for social media tools intense, fixing this was critical to reducing churn and converting more users to paid accounts, so I ran usability testing with users stuck at this step to find out why they were failing to set up a publishing method.
                 </p>
             </div>
-            
+
             <!--separator--> 
             <hr/> 
             
@@ -154,43 +145,16 @@
             
             <div class="block">
                 <h2>Defining success metrics and product goals</h2>
-               
 
-             <div class="margin56">
-                <a data-fancybox="gallery" href="img/ig_metrics.png"><img class="margin32" src="img/ig_metrics.png"></a>
+                <div class="margin56">
+                    <a data-fancybox="gallery" href="img/ig_metrics.png"><img class="margin32" src="img/ig_metrics.png" alt="Success metrics and product goals defined for the Instagram publishing project"></a>
+                </div>
             </div>
 
-            <!--separator--> 
-            <hr/> 
-            
-          <!--   <h4>Research: Technical limitations</h4>
+            <!--separator-->
+            <hr/>
 
-
-            <h2>Publishing to Instagram through third-party tools and API limitations</h2>
-
-            <div class="block">
-                <p>
-                    There is 3 types of Instagram profiles:
-                </p>
-                <ul class="square">
-                    <li>Business account</li>
-                    <li>Private or Creator account</li>
-                </ul>
-                    
-                <p>
-                    Depending on your profile type, you can publish your social media post automatically or manually with push notifications on your phone:
-                </p>
-                <ul class="square">
-                    <li><span class="bold">Automatically with auto-publishing</span>, it works only for Instagram business profiles. And the Instagram profile needs to be connected to a Facebook page.</li>
-                    <li><span class="bold">Manually, using their phone</span>, we call it mobile notification publishing. When it’s time to publish, they receive a notification on their phone to publish, it works for all Instagram profiles: private/creator and business.</li>
-                </ul>               
-            </div>
-
-            <div class="margin56">
-                <img src="img/ig_curent_flow.png">
-            </div>-->
-
-            <h4>Research findings</h4>
+            <h4>User test findings</h4>
 
             <div class="block">
                 <h2>Through beta user feedback, usability testing, analytics, and customer support data, we identified multiple pain points and high user frustration. While we uncovered more than 10 bugs, the primary issue was confusion around the user flow for defining a publishing method for Instagram.</h2>
@@ -211,8 +175,8 @@
             </div>
 
             <div class="margin56">
-                <a data-fancybox="gallery" href="img/ig_userflow.png"><img class="margin32" src="img/ig_userflow.png"></a>
-                <p class="margin32_bottom"><span class="bold">Figure1:</span> Pain points when trying to define a publishing method for Instagram profiles. </p>
+                <a data-fancybox="gallery" href="img/ig_userflow.png"><img class="margin32" src="img/ig_userflow.png" alt="Diagram of pain points users hit when trying to define a publishing method for their Instagram profile"></a>
+                <p class="margin32_bottom"><span class="bold">Figure 1:</span> Pain points when trying to define a publishing method for Instagram profiles. </p>
 
             </div>
 
@@ -222,7 +186,7 @@
                 
 
                 <div class="margin56">
-                    <a data-fancybox="gallery" href="img/ig_curent_flow.png"><img class="margin32" src="img/ig_curent_flow.png"></a>
+                    <a data-fancybox="gallery" href="img/ig_curent_flow.png"><img class="margin32" src="img/ig_curent_flow.png" alt="Current flow showing automatic publishing restricted to Instagram business profiles only"></a>
                     <p class="margin32_bottom"><span class="bold">Figure 2:</span> The current flow don't allow all users to use auto publishing. </p>
                 </div>
 
@@ -239,7 +203,7 @@
             </div>
 
             <div class="margin56">
-                <a data-fancybox="gallery" href="img/ig_composer.png"><img class="margin32" src="img/ig_composer.png"></a>
+                <a data-fancybox="gallery" href="img/ig_composer.png"><img class="margin32" src="img/ig_composer.png" alt="Composer screen blocked from creating a post because no publishing method is defined"></a>
                 <p class="margin32_bottom"><span class="bold">Figure 3:</span> Without a publishing method, users are stuck. </p>
             </div>
 
@@ -253,12 +217,12 @@
             </div>
 
             <div class="margin56">
-                <a data-fancybox="gallery" href="img/ig_notif2.png"><img class="margin32" src="img/ig_notif2.png"></a>
+                <a data-fancybox="gallery" href="img/ig_notif2.png"><img class="margin32" src="img/ig_notif2.png" alt="Mobile app screen showing the failed attempt to publish when the push notification wasn't received"></a>
                 <p class="margin32_bottom"><span class="bold">Figure 4:</span> Using the mobile app to publish if they don't receive the notification didn't work. </p>
             </div>
 
             <div class="margin56">
-                <a data-fancybox="gallery" href="img/ig_notif1.png"><img class="margin32" src="img/ig_notif1.png"></a>
+                <a data-fancybox="gallery" href="img/ig_notif1.png"><img class="margin32" src="img/ig_notif1.png" alt="Web app interface with no option to resend the mobile publishing notification"></a>
                 <p class="margin32_bottom"><span class="bold">Figure 5:</span> No easy way to trigger a new notification from the web app. </p>
             </div>
 
@@ -284,37 +248,35 @@
                 <h2>1. Redesign the user flow to make auto-publishing available to all users and guide them in converting to a business profile, if needed.
                 </h2>
                 
-                <p>I introduced a new user flow that enables Business, Personal, and Creator profiles to publish posts automatically on Levuro (Figure 5). This update empowers users to choose how they want to publish their Instagram posts, with guidance provided for converting to a business profile if they wish to enable automatic publishing (Figure 6).</p>
+                <p>I introduced a new user flow that enables Business, Personal, and Creator profiles to publish posts automatically on Levuro (Figure 6). This update empowers users to choose how they want to publish their Instagram posts, with guidance provided for converting to a business profile if they wish to enable automatic publishing (Figure 7).</p>
 
                 <div class="margin56">
-                    <a data-fancybox="gallery" href="img/ig_api2.png"><img class="margin32" src="img/ig_api2.png"></a>
-                    <p class="margin32_bottom"><span class="bold">Figure 5:</span>  New user flow for Instagram auto-publishing. </p>
-                </div>
-                
-            </div>
-
-
-                <div class="margin56">
-                    <a data-fancybox="gallery" href="img/ig_new_flow.png"><img class="margin32" src="img/ig_new_flow.png"></a>
-                    <p class="margin32_bottom"><span class="bold">Figure 6:</span> Updated flow for connecting an Instagram account and defining a publishing method. </p>
+                    <a data-fancybox="gallery" href="img/ig_api2.png"><img class="margin32" src="img/ig_api2.png" alt="New user flow enabling Business, Personal, and Creator Instagram profiles to publish automatically on Levuro"></a>
+                    <p class="margin32_bottom"><span class="bold">Figure 6:</span> New user flow for Instagram auto-publishing. </p>
                 </div>
 
             </div>
-    
 
-            <!--design--> 
+
+                <div class="margin56">
+                    <a data-fancybox="gallery" href="img/ig_new_flow.png"><img class="margin32" src="img/ig_new_flow.png" alt="Updated flow for connecting an Instagram account and defining a publishing method"></a>
+                    <p class="margin32_bottom"><span class="bold">Figure 7:</span> Updated flow for connecting an Instagram account and defining a publishing method. </p>
+                </div>
+
+
+            <!--design-->
 
             <div class="block">
                 <h2>2. Allow post creation even if a publishing method isn’t defined, so users can create drafts and set up publishing later.</h2>
 
                 <p>
-                    By enabling users to draft posts without immediately defining a publishing method, we made the process more intuitive and motivational. Users can invest time in creating the perfect social media post and then define their publishing method when scheduling the post (fig 7).
+                    By enabling users to draft posts without immediately defining a publishing method, we made the process more intuitive and motivational. Users can invest time in creating the perfect social media post and then define their publishing method when scheduling the post (fig 8).
                 </p><br>
             </div>
 
             <div class="margin56">
-                <a data-fancybox="gallery" href="img/ig_composer2.png"><img class="margin32" src="img/ig_composer2.png"></a>
-                <p class="margin32_bottom"><span class="bold">Figure 7:</span> Updated interface for creating drafts and defining publishing methods later. </p>
+                <a data-fancybox="gallery" href="img/ig_composer2.png"><img class="margin32" src="img/ig_composer2.png" alt="Updated composer interface allowing users to create post drafts without defining a publishing method first"></a>
+                <p class="margin32_bottom"><span class="bold">Figure 8:</span> Updated interface for creating drafts and defining publishing methods later. </p>
             </div>
 
             <div class="block">
@@ -322,14 +284,14 @@
             </div>
 
             <div class="margin56">
-                <a data-fancybox="gallery" href="img/ig_notif.png"><img class="margin32" src="img/ig_notif.png"></a>
-                <p class="margin32_bottom"><span class="bold">Figure 8:</span> Updated flow for resending notifications and publishing from the web app. </p>
+                <a data-fancybox="gallery" href="img/ig_notif.png"><img class="margin32" src="img/ig_notif.png" alt="Updated web app flow for resending the mobile publishing notification"></a>
+                <p class="margin32_bottom"><span class="bold">Figure 9:</span> Updated flow for resending notifications and publishing from the web app. </p>
             </div>
 
 
             <div class="margin56">
-                <a data-fancybox="gallery" href="img/ig_mobile.png"><img class="margin32" src="img/ig_mobile.png"></a>
-                <p class="margin32_bottom"><span class="bold">Figure 9:</span> An easy way to publish from the mobile app if users don’t receive the push notification. </p>
+                <a data-fancybox="gallery" href="img/ig_mobile.png"><img class="margin32" src="img/ig_mobile.png" alt="Mobile app screen letting users publish directly if they don't receive the push notification"></a>
+                <p class="margin32_bottom"><span class="bold">Figure 10:</span> An easy way to publish from the mobile app if users don’t receive the push notification. </p>
             </div>
 
         <!--conclusion--> 
@@ -338,13 +300,14 @@
             <h4>Conclusion </h4>
 
             <div class="block">
-                <h2>After one month of implementation, we saw significant improvements:</h2>
+                <h2>After one month of implementation, we saw the first improvements, which kept building over the following months:</h2>
 
                 <ul class="square">
-                    <li>Help requests related to scheduling a publishing method for Instagram dropped notably.</li>
+                    <li>Instagram-related support requests dropped by half, thanks to the product changes and a rebuilt help center.</li>
                     <li>Screen recordings indicated that most users successfully resolved issues such as connecting their Instagram profiles to a Facebook page or converting to a business account by following the new, clearer modal dialogs.</li>
-                    <li>We also observed a rise in Instagram accounts with a defined publishing method.</li>
-                </ul>  
+                    <li>Instagram accounts with a defined publishing method rose from 30% to over 50% within a few months, hitting our original target. We also emailed users whose Instagram still lacked a publishing method, inviting them to set one up, which helped drive that increase.</li>
+                    <li>The share of accounts with an Instagram profile connected that got deleted fell from 63% to 40%, still an area we kept working to improve.</li>
+                </ul>
             </div>
 
             <div class="block">
@@ -369,7 +332,7 @@
 
 
             <div class="margin56">
-                <a data-fancybox="gallery" href="img/ig_modal1.png"><img class="margin32" src="img/ig_modal1.png"></a>
+                <a data-fancybox="gallery" href="img/ig_modal1.png"><img class="margin32" src="img/ig_modal1.png" alt="Modal dialog letting users choose between automatic and manual Instagram publishing"></a>
             </div>
 
             <div class="block">
@@ -392,19 +355,19 @@
 
 
             <div class="margin56">
-                <a data-fancybox="gallery" href="img/ig_modal2.png"><img class="margin32" src="img/ig_modal2.png"></a>
+                <a data-fancybox="gallery" href="img/ig_modal2.png"><img class="margin32" src="img/ig_modal2.png" alt="Modal dialog copy before the rewrite, using unclear technical language"></a>
             </div>
 
             <div class="margin56">
-                <a data-fancybox="gallery" href="img/ig_modal3.png"><img class="margin32" src="img/ig_modal3.png"></a>
+                <a data-fancybox="gallery" href="img/ig_modal3.png"><img class="margin32" src="img/ig_modal3.png" alt="Modal dialog copy after the rewrite, in plain, jargon-free language"></a>
             </div>
 
             <div class="margin56">
-                <a data-fancybox="gallery" href="img/ig_modal4.png"><img class="margin32" src="img/ig_modal4.png"></a>
+                <a data-fancybox="gallery" href="img/ig_modal4.png"><img class="margin32" src="img/ig_modal4.png" alt="Additional modal dialog example showing the rewritten step-by-step guidance"></a>
             </div>
 
             <div class="margin56">
-                <a data-fancybox="gallery" href="img/ig_modal5.png"><img class="margin32" src="img/ig_modal5.png"></a>
+                <a data-fancybox="gallery" href="img/ig_modal5.png"><img class="margin32" src="img/ig_modal5.png" alt="Error state modal dialog with clear, actionable guidance after the rewrite"></a>
             </div>
 </div>
 

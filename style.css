@@ -854,6 +854,32 @@ footer {
   font-weight: 600;
 }
 
+.instagram-impact {
+  margin: 32px 0 48px;
+  padding: 12px 32px;
+  border-radius: 8px;
+  background: #F7F6FA;
+}
+
+.instagram-impact ul {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding-left: 24px;
+  list-style: disc;
+}
+
+.instagram-impact li {
+  color: #333333;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.instagram-impact strong {
+  color: #333333;
+  font-weight: 600;
+}
+
 .brand-refresh-page .project-details strong {
   font-weight: 600;
 }
@@ -863,6 +889,14 @@ footer {
 }
 
 .company-profile-page .project-details strong {
+  font-weight: 600;
+}
+
+.instagram-page #container_portfolio .project-details {
+  line-height: 1.85;
+}
+
+.instagram-page .project-details strong {
   font-weight: 600;
 }
 
@@ -913,12 +947,24 @@ footer {
   padding: 8px 0;
 }
 
+.instagram-impact-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  padding: 8px 0;
+}
+
 .brand-refresh-metric + .brand-refresh-metric {
   padding-left: 24px;
   border-left: 1px solid #E6E9F0;
 }
 
 .company-impact-metric + .company-impact-metric {
+  padding-left: 24px;
+  border-left: 1px solid #E6E9F0;
+}
+
+.instagram-impact-metric + .instagram-impact-metric {
   padding-left: 24px;
   border-left: 1px solid #E6E9F0;
 }
@@ -954,6 +1000,29 @@ footer {
 }
 
 .company-impact-metric span {
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.instagram-impact-metric,
+.instagram-impact-metric strong {
+  color: #333333;
+}
+
+.instagram-impact-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.instagram-impact-metric strong {
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.instagram-impact-metric span {
   color: #555555;
   font-size: 16px;
   line-height: 1.35;
@@ -1536,6 +1605,15 @@ button[type=submit]:hover {
     padding-top: 8px;
   }
   .company-impact-metric + .company-impact-metric {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .instagram-impact-metrics {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-top: 8px;
+  }
+  .instagram-impact-metric + .instagram-impact-metric {
     padding-left: 0;
     border-left: 0;
   }
