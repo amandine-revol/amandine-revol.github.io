@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1YFMZZ6FT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-R1YFMZZ6FT');
+    </script>
+
+    <!-- Hotjar Tracking Code for https://amandine-revol.github.io/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2186603,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="icon" type="image/png" href="../img/fav.png" />
+    <title>CV Optimizer: an AI feature that improves CVs without rewriting them - Amandine Revol</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="../lightbox.js" defer></script>
+
+    <!--font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="article-page cv-optimizer-page">
+    <header>
+        <div class="title"><a href="../index.html"><img src="../img/profile.png" alt=""><span>Amandine Revol</span></a></div>
+        <details class="nav-menu" open>
+            <summary aria-label="Open menu">Menu</summary>
+        <nav>
+            <a href="../index.html" class="active">Work</a>
+            <a href="../about.html">About</a>
+            <a href="../amandine_revol.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        </nav>
+        </details>
+    </header>
+
+    <div class="header_project">
+        <div class="imgtop_center">
+            <!-- Placeholder: swap for a real hero shot of the CV Optimizer product once one exists -->
+            <div class="image-placeholder image-placeholder--hero">Hero image placeholder: CV Optimizer product shot</div>
+        </div>
+    </div>
+
+    <main id="container_portfolio">
+        <div class="project_title">
+            <h1>CV Optimizer: an AI feature that improves CVs without rewriting them</h1>
+        </div>
+
+        <p class="project-details"><strong>Role:</strong> Senior UX Designer.<br><strong>Team:</strong> Scrum team of 2 frontend engineers, 2 backend engineers, and a product manager.<br><strong>Duration:</strong> 4 months, concept to production.<br><strong>Status:</strong> In build. Prototype tested, implementation underway.<br><strong>Platforms:</strong> <a href="https://www.jobs.ch/" target="_blank" rel="noopener noreferrer">jobs.ch</a> and <a href="https://www.jobup.ch/" target="_blank" rel="noopener noreferrer">jobup.ch</a>.</p>
+
+        <section class="case-impact" aria-labelledby="ai-usage-title">
+            <h2 id="ai-usage-title">How I used AI on this project</h2>
+            <ul>
+                <li><strong>AI in discovery.</strong> I mined around 50 real conversations to understand how job seekers tailor their CV and where it hurts, then checked the findings against a survey. Weeks of research work, done in days. I turned the method into a reusable AI skill for the team and used the results to set the product direction.</li>
+                <li><strong>AI in the product.</strong> I designed how the AI behaves: suggestions split by confidence, a hard rule against inventing anything, and a limit on what the AI decides so a person can always check it. I edit the prompt myself, so I can change what the product does without filing a ticket. I also gave it a list of words to avoid, so the CV still sounds like the person who wrote it.</li>
+                <li><strong>AI in the making.</strong> I built the prototype in code, on our real codebase, with the AI connected end to end. A working, testable product in six weeks instead of four months. I did not open Figma for the core flow.</li>
+            </ul>
+        </section>
+
+        <h2>1. The problem, and an impossible timeline</h2>
+        <div class="block">
+            <p>JobFit shows job seekers how well their CV matches a job ad. People liked it, but told us it wasn't actionable. They saw a score and didn't know what to change in their CV.</p>
+            <div class="case-stats">
+                <div class="case-stat"><strong>70%</strong><span>tailor their CV for each job ad they apply to, uploading a new version on the application page</span></div>
+                <div class="case-stat"><strong>58%</strong><span>already use AI to tailor their CV</span></div>
+                <div class="case-stat"><strong>30 min</strong><span>spent tailoring CV, per application</span></div>
+                <div class="case-stat"><strong>4 months</strong><span>to design and ship the whole thing</span></div>
+            </div>
+            <p><strong>So job seekers were already optimizing their CV. Just not with us.</strong></p>
+            <p>We had two goals: keep job seekers on the platform, desktop and mobile, for the full journey from finding a job to tailoring a CV to applying, and send employers better-matched candidates. Four months to design and ship a new feature is tight, so I leaned on AI to move faster. This concept was highly interactive, a natural fit for vibe coding. It showed the team exactly what I meant, not just a static Figma file.</p>
+        </div>
+
+        <h2>2. Deciding what to build</h2>
+        <div class="block">
+            <p>The product manager and I split the research. She went through papers. I went to where job seekers actually talk: about 50 threads on Reddit, mostly Swiss subreddits, mined with AI in hours instead of weeks. I turned that process into a reusable AI skill so the rest of the team could run it too, and wrote up the method and its limits in a separate case study.</p>
+            <p class="skill-cta"><a href="cv-ai-mining.html">Read how the conversation mining worked →</a></p>
+            <p>Reddit is a biased sample, so I asked the UX research team to test the findings with a 200-person survey. The same patterns came back: 70% spend under 30 minutes tailoring a CV, 64% cite the lack of an ATS check as a top frustration, 62% say AI output feels too generic, and 69% want full control over their edits. Some had also seen AI invent things they never did.</p>
+            <p>To decide the direction, we built prototypes from the findings and showed them to the team. The product manager's instinct was one button: click, get an optimized CV back. The research pointed the other way, so I built a fully editable CV that highlights suggestions with the user in control. Once the team saw it working, the one-button version was never on the table again.</p>
+            <div class="case-jobs">
+                <h3 class="case-jobs-title">JTBD and the principles that guided every decision</h3>
+                <div class="case-jobs-grid">
+                    <div class="case-job">
+                        <h4>Tailor this CV to this job in under 15 minutes</h4>
+                        <p>Fast, with an escape hatch: accept suggestions one by one, or accept all.</p>
+                    </div>
+                    <div class="case-job">
+                        <h4>Stop me from sounding like ChatGPT</h4>
+                        <p>We suggest, we never rewrite without asking. The user owns the CV.</p>
+                    </div>
+                    <div class="case-job">
+                        <h4>Get past the bot so a human sees me</h4>
+                        <p>Show the why: every suggestion cites the line in the job ad that triggered it, in one sentence. Offer an ATS-friendly CV template.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>3. The CV as the core of the interface</h2>
+        <div class="block">
+            <p>Every competitor shrinks the CV to a thumbnail and surrounds it with score panels, keyword chips, and collapsed settings. The thing the user came to change ends up the smallest thing on screen.</p>
+            <!-- Placeholder: side-by-side of a competitor's dashboard-first layout vs. our CV-first screen -->
+            <div class="image-placeholder">Screenshot placeholder: a competitor's dashboard-first layout next to our CV-first screen</div>
+            <ul>
+                <li><strong>Constraint.</strong> 15 minutes to optimize the CV, and mobile. A three-panel dashboard has no phone answer, and we want to allow CV optimization on mobile.</li>
+                <li><strong>Decision.</strong> The CV fills the screen and every part of it is editable in place, like a document in Notion or Google Docs. Suggestions are inline highlights on the text they change. Click one, see why in a sentence, accept, reject, or retry. The side panel holds only progress and the suggestions we aren't confident about. No match score anywhere, because a score invites gaming, and we already knew users chase numbers until the CV stops reading like a person wrote it.</li>
+                <li><strong>Mobile version.</strong> Same document, different mechanics. The CV stays full width. Suggestions collapse into a floating action button, and reviewing opens a bottom sheet one suggestion at a time with accept, reject, retry, and skip. Accept all sits at the top for anyone in a hurry.</li>
+                <li><strong>How it got built.</strong> Engineering said a fully editable CV was too complex for the timeline. I vibe coded a version in a few days and the objection died. From there I worked full time with a frontend engineer for six weeks on a real prototype, on our own codebase, on a shared GitHub branch. It worked end to end: upload a CV, parse it, get live AI suggestions, apply a template, export a PDF. Not a clickable mockup.</li>
+            </ul>
+            <!-- Placeholder: desktop screenshot showing the inline highlight, its "why", the confidence panel, and the absent match score -->
+            <div class="image-placeholder">Screenshot placeholder: desktop view, the inline highlight with its "why", the "confirm before adding" panel, and the absence of a match score</div>
+            <!-- Placeholder: mobile screenshot showing the FAB and bottom sheet review flow -->
+            <div class="image-placeholder">Screenshot placeholder: mobile view, the suggestion counter pill and the bottom sheet review flow</div>
+            <!-- Placeholder: short silent looping recording proving the prototype is real, not a mockup -->
+            <div class="image-placeholder">Recording placeholder: 10-15 second silent loop, upload, suggestions appear, accept one, template applied</div>
+        </div>
+
+        <h2>4. Preventing AI hallucination</h2>
+        <div class="block">
+            <p>The AI can spot a skill in the job ad that's missing from the CV. Sometimes the evidence is already there, worded differently. Sometimes there is none, and adding it would be a lie the candidate has to defend in an interview. Some of the job seekers we surveyed had already been handed AI content about things they never did.</p>
+            <p>So suggestions are split by confidence. When one is grounded in the CV, one click accepts it. When it isn't, it appears in a separate list, is excluded from accept all, and the user has to add it themselves. The panel says: <em>"These may apply to you, we can't tell from your CV. Add only if it's true."</em></p>
+            <p>The trade-off is real. Those unevidenced suggestions are often the ones that would raise the match score most. We chose a CV the candidate can defend over a better number. A competitor will happily add them.</p>
+            <p>The frontend engineer set the prompt up so I could edit it directly, which meant I could change the product's behavior myself instead of filing a ticket. Three rules I wrote into it:</p>
+            <ul>
+                <li>Never invent. Use only what's in the CV or the job ad.</li>
+                <li>Suggest, don't rewrite. Change the smallest piece of text that does the job.</li>
+                <li>Explain in one plain sentence, no AI vocabulary. I also added a list of words to avoid because they sound too much like AI, like the em dash.</li>
+            </ul>
+        </div>
+
+        <h2>5. Testing the prototype with real job seekers</h2>
+        <div class="block">
+            <p>We ran usability tests with 8 people, 4 on desktop and 4 on mobile.</p>
+            <p>Because the prototype ran on our real codebase, they tested the real thing. They uploaded their own CV, got real AI suggestions, and applied a template. Normally at this stage we test screenshots or a Figma prototype that breaks as soon as someone does something unexpected. This time people couldn't tell it was a prototype, so their feedback was about the product itself.</p>
+            <p>It also cost us. Something I had coded on my own disabled CV editing on iOS. We tested before the sessions and missed it. The first two participants were on iOS and couldn't interact with anything, so we lost 2 of our 8 sessions.</p>
+            <p>What we learned:</p>
+            <ul>
+                <li><strong>People didn't realize they could edit the CV</strong>, even with an infobox and a text cursor. This is the heart of the concept, so it's the most important finding. Our fix is to open with one field already in edit state, so the first thing they see is the CV being edited.</li>
+                <li><strong>They wanted the template to feel more personal.</strong> The option that fits our timeline: let them choose the highlight color between green, blue, or orange.</li>
+                <li><strong>If their CV had a photo, they expected it in the optimized version.</strong> A quick fix for the engineer.</li>
+            </ul>
+        </div>
+
+        <h2>6. Where it stands</h2>
+        <div class="block">
+            <p>The feature is in build, live before the end of the term. I'll come back and update this with the impact: whether people are using their optimized CV to apply, whether the 15 minutes holds, and whether employer-side candidate quality moves.</p>
+        </div>
+
+        <h2>7. Learnings</h2>
+        <div class="block">
+            <ul>
+                <li><strong>Building it in code meant we had something real to test after six weeks instead of four months.</strong> People used their own CVs and got real AI suggestions, so what we learned was real too.</li>
+                <li><strong>There's a point where you have to stop.</strong> After about six weeks I was spending more time fixing bugs than making progress. That was the signal. Engineering took over the build, and I kept improving the prototype alongside them.</li>
+                <li><strong>A prototype in code still changes like any design.</strong> I showed it to the design community three times and changed a lot, like turning the tabs into buttons. I also went back to Figma for the navigation, because trying five options is quicker there.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_center">
+            <span class="right">© 2026 Amandine Revol</span>
+            <span>
+                <a href="https://dribbble.com/Amandines">
+                    <span style="font-size: 27px; vertical-align: middle;">
+                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </span>
+        </div>
+    </footer>
+    <script src="../menu.js"></script>
+    <script src="../footer.js"></script>
+
+</body>
+</html>
