@@ -395,6 +395,14 @@ img {
   background: #F7F6FA;
 }
 
+#container_portfolio video {
+  display: block;
+  width: 100%;
+  max-width: 980px;
+  height: auto;
+  background: #000000;
+}
+
 #container_portfolio img {
   display: block;
   width: 100%;
@@ -908,6 +916,28 @@ footer {
   font-weight: 600;
 }
 
+.case-visual {
+  display: block;
+  margin-top: 80px;
+}
+
+.case-visual-caption {
+  margin: 8px 0 0;
+  color: #555555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 1100px) {
+  .cv-optimizer-page #container_portfolio img,
+  .cv-optimizer-page #container_portfolio video {
+    width: 1200px;
+    max-width: calc(100vw - 32px);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 .case-impact {
   margin: 32px 0 48px;
   padding: 12px 32px;
@@ -1030,6 +1060,37 @@ footer {
 .case-job p {
   margin: 0;
   color: #555555;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.case-defs {
+  margin: 24px 0 32px;
+}
+
+.case-def {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  padding: 24px 0;
+  border-top: 1px solid #E3E1EC;
+}
+
+.case-def:first-child {
+  border-top: none;
+}
+
+.case-def dt {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4B2E9E;
+}
+
+.case-def dd {
+  margin: 0;
+  color: #333333;
   font-size: 17px;
   line-height: 1.6;
 }
@@ -1771,6 +1832,11 @@ button[type=submit]:hover {
   }
   .case-job {
     padding: 24px;
+  }
+  .case-def {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 20px 0;
   }
   .case-studies-section > .project h2 {
     font-size: 24px;

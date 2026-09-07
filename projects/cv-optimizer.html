@@ -114,21 +114,37 @@
 
         <h2>3. The CV as the core of the interface</h2>
         <div class="block">
-            <p>Every competitor shrinks the CV to a thumbnail and surrounds it with score panels, keyword chips, and collapsed settings. The thing the user came to change ends up the smallest thing on screen.</p>
-            <!-- Placeholder: side-by-side of a competitor's dashboard-first layout vs. our CV-first screen -->
-            <div class="image-placeholder">Screenshot placeholder: a competitor's dashboard-first layout next to our CV-first screen</div>
-            <ul>
-                <li><strong>Constraint.</strong> 15 minutes to optimize the CV, and mobile. A three-panel dashboard has no phone answer, and we want to allow CV optimization on mobile.</li>
-                <li><strong>Decision.</strong> The CV fills the screen and every part of it is editable in place, like a document in Notion or Google Docs. Suggestions are inline highlights on the text they change. Click one, see why in a sentence, accept, reject, or retry. The side panel holds only progress and the suggestions we aren't confident about. No match score anywhere, because a score invites gaming, and we already knew users chase numbers until the CV stops reading like a person wrote it.</li>
-                <li><strong>Mobile version.</strong> Same document, different mechanics. The CV stays full width. Suggestions collapse into a floating action button, and reviewing opens a bottom sheet one suggestion at a time with accept, reject, retry, and skip. Accept all sits at the top for anyone in a hurry.</li>
-                <li><strong>How it got built.</strong> Engineering said a fully editable CV was too complex for the timeline. I vibe coded a version in a few days and the objection died. From there I worked full time with a frontend engineer for six weeks on a real prototype, on our own codebase, on a shared GitHub branch. It worked end to end: upload a CV, parse it, get live AI suggestions, apply a template, export a PDF. Not a clickable mockup.</li>
-            </ul>
-            <!-- Placeholder: desktop screenshot showing the inline highlight, its "why", the confidence panel, and the absent match score -->
-            <div class="image-placeholder">Screenshot placeholder: desktop view, the inline highlight with its "why", the "confirm before adding" panel, and the absence of a match score</div>
-            <!-- Placeholder: mobile screenshot showing the FAB and bottom sheet review flow -->
-            <div class="image-placeholder">Screenshot placeholder: mobile view, the suggestion counter pill and the bottom sheet review flow</div>
-            <!-- Placeholder: short silent looping recording proving the prototype is real, not a mockup -->
-            <div class="image-placeholder">Recording placeholder: 10-15 second silent loop, upload, suggestions appear, accept one, template applied</div>
+            <p>Most competitors shrink the CV to a thumbnail and surround it with score panels, keyword chips, and collapsed settings. The thing the user came to change ends up the smallest thing on screen.</p>
+            <a data-fancybox="cv-optimizer" href="img/cv_opti_competitor.png"><img class="case-visual" src="img/cv_opti_competitor.png" alt="Side-by-side comparison: a competitor's tool with the CV squeezed between a settings panel and a score panel, versus the CV Optimizer where the CV fills the screen and suggestions sit on the text they change"></a>
+            <p class="case-visual-caption">A competitor squeezes the CV between a settings panel and a score panel. The CV Optimizer lets the CV fill the screen, with suggestions inline on the text they change.</p>
+            <dl class="case-defs">
+                <div class="case-def">
+                    <dt>Constraint</dt>
+                    <dd>15 minutes to optimize the CV, and mobile. A three-panel dashboard has no phone answer, and we want to allow CV optimization on mobile.</dd>
+                </div>
+                <div class="case-def">
+                    <dt>Decision</dt>
+                    <dd>The CV fills the screen and every part of it is editable in place, like a document in Notion or Google Docs. Suggestions are inline highlights on the text they change. Click one, see why in a sentence, accept, reject, or retry. The side panel holds only progress and the suggestions we aren't confident about. No match score anywhere, because a score invites gaming, and we already knew users chase numbers until the CV stops reading like a person wrote it.</dd>
+                </div>
+                <div class="case-def">
+                    <dt>Mobile</dt>
+                    <dd>Same document, different mechanics. The CV stays full width. Suggestions collapse into a floating action button, and reviewing opens a bottom sheet one suggestion at a time with accept, reject, retry, and skip. Accept all sits at the top for anyone in a hurry.</dd>
+                </div>
+                <div class="case-def">
+                    <dt>How it got built</dt>
+                    <dd>Engineering said a fully editable CV was too complex for the timeline. I vibe coded a version in a few days and the objection died. From there I worked full time with a frontend engineer for six weeks on a real prototype, on our own codebase, on a shared GitHub branch. It worked end to end: upload a CV, parse it, get live AI suggestions, apply a template, export a PDF. Not a clickable mockup.</dd>
+                </div>
+            </dl>
+            <a data-fancybox="cv-optimizer" href="img/cv_opti_step1.png"><img class="case-visual" src="img/cv_opti_step1.png" alt="Desktop CV Optimizer screen annotated to show a progress bar instead of a match score, Accept all as an explicit choice rather than a default, Accept, Reject, Retry buttons on each inline suggestion, and the Confirm before adding section holding unverified suggestions"></a>
+            <p class="case-visual-caption">Progress instead of a score, Accept all as a choice rather than a default, and Accept, Reject, Retry on every suggestion. Confirm before adding holds anything the AI can't verify from the CV.</p>
+            <a data-fancybox="cv-optimizer" href="img/cv_opti_step2.png"><img class="case-visual" src="img/cv_opti_step2.png" alt="Template selection screen showing the finished CV content next to template thumbnails, with a live preview that updates as the user switches templates"></a>
+            <p class="case-visual-caption">Content first, template second: the CV stays in view while the preview updates as you switch templates.</p>
+            <a data-fancybox="cv-optimizer" href="img/cv_opti_mobile.png"><img class="case-visual" src="img/cv_opti_mobile.png" alt="Three mobile screens: the CV with a floating suggestion-count button, a bottom sheet reviewing one suggestion at a time with accept, reject, retry and skip, and the template selection screen before applying"></a>
+            <p class="case-visual-caption">The same review flow on mobile: a floating suggestion count, one suggestion at a time in a bottom sheet, then template selection before applying.</p>
+            <video class="case-visual" src="img/cv-optimizer-demo.mp4" muted loop playsinline controls>
+                Your browser doesn't support embedded video. <a href="img/cv-optimizer-demo.mp4">Download the recording</a> instead.
+            </video>
+            <p class="case-visual-caption">A quick look at the working prototype: upload a CV, review suggestions, accept one, apply a template.</p>
         </div>
 
         <h2>4. Preventing AI hallucination</h2>
