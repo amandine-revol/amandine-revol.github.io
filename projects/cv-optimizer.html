@@ -27,7 +27,7 @@
     <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="icon" type="image/png" href="../img/fav.png" />
-    <title>CV Optimizer: an AI feature that improves CVs without rewriting them - Amandine Revol</title>
+    <title>CV Optimizer: keeping AI suggestions honest - Amandine Revol</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -53,17 +53,16 @@
 
     <div class="header_project">
         <div class="imgtop_center">
-            <!-- Placeholder: swap for a real hero shot of the CV Optimizer product once one exists -->
-            <div class="image-placeholder image-placeholder--hero">Hero image placeholder: CV Optimizer product shot</div>
+            <img src="../img/cv_opti_hero.png" alt="CV Optimizer: an editable CV with inline AI suggestions">
         </div>
     </div>
 
     <main id="container_portfolio">
         <div class="project_title">
-            <h1>CV Optimizer: an AI feature that improves CVs without rewriting them</h1>
+            <h1>CV Optimizer: keeping AI suggestions honest</h1>
         </div>
 
-        <p class="project-details"><strong>Role:</strong> Senior UX Designer.<br><strong>Team:</strong> Scrum team of 2 frontend engineers, 2 backend engineers, and a product manager.<br><strong>Duration:</strong> 4 months, concept to production.<br><strong>Status:</strong> In build. Prototype tested, implementation underway.<br><strong>Platforms:</strong> <a href="https://www.jobs.ch/" target="_blank" rel="noopener noreferrer">jobs.ch</a> and <a href="https://www.jobup.ch/" target="_blank" rel="noopener noreferrer">jobup.ch</a>.</p>
+        <p class="project-details"><strong>Role:</strong> Senior UX Designer.<br><strong>Team:</strong> Scrum team of 2 frontend , 2 backend, and a product manager.<br><strong>Duration:</strong> 4 months, concept to production.<br><strong>Status:</strong> In build. Prototype tested, implementation underway.<br><strong>Platforms:</strong> <a href="https://www.jobs.ch/" target="_blank" rel="noopener noreferrer">jobs.ch</a> and <a href="https://www.jobup.ch/" target="_blank" rel="noopener noreferrer">jobup.ch</a>.</p>
 
         <section class="case-impact" aria-labelledby="ai-usage-title">
             <h2 id="ai-usage-title">How I used AI on this project</h2>
@@ -116,7 +115,6 @@
         <div class="block">
             <p>Most competitors shrink the CV to a thumbnail and surround it with score panels, keyword chips, and collapsed settings. The thing the user came to change ends up the smallest thing on screen.</p>
             <a data-fancybox="cv-optimizer" href="img/cv_opti_competitor.png"><img class="case-visual" src="img/cv_opti_competitor.png" alt="Side-by-side comparison: a competitor's tool with the CV squeezed between a settings panel and a score panel, versus the CV Optimizer where the CV fills the screen and suggestions sit on the text they change"></a>
-            <p class="case-visual-caption">A competitor squeezes the CV between a settings panel and a score panel. The CV Optimizer lets the CV fill the screen, with suggestions inline on the text they change.</p>
             <dl class="case-defs">
                 <div class="case-def">
                     <dt>Constraint</dt>
@@ -136,28 +134,17 @@
                 </div>
             </dl>
             <a data-fancybox="cv-optimizer" href="img/cv_opti_step1.png"><img class="case-visual" src="img/cv_opti_step1.png" alt="Desktop CV Optimizer screen annotated to show a progress bar instead of a match score, Accept all as an explicit choice rather than a default, Accept, Reject, Retry buttons on each inline suggestion, and the Confirm before adding section holding unverified suggestions"></a>
-            <p class="case-visual-caption">Progress instead of a score, Accept all as a choice rather than a default, and Accept, Reject, Retry on every suggestion. Confirm before adding holds anything the AI can't verify from the CV.</p>
             <a data-fancybox="cv-optimizer" href="img/cv_opti_step2.png"><img class="case-visual" src="img/cv_opti_step2.png" alt="Template selection screen showing the finished CV content next to template thumbnails, with a live preview that updates as the user switches templates"></a>
-            <p class="case-visual-caption">Content first, template second: the CV stays in view while the preview updates as you switch templates.</p>
             <a data-fancybox="cv-optimizer" href="img/cv_opti_mobile.png"><img class="case-visual" src="img/cv_opti_mobile.png" alt="Three mobile screens: the CV with a floating suggestion-count button, a bottom sheet reviewing one suggestion at a time with accept, reject, retry and skip, and the template selection screen before applying"></a>
-            <p class="case-visual-caption">The same review flow on mobile: a floating suggestion count, one suggestion at a time in a bottom sheet, then template selection before applying.</p>
-            <video class="case-visual" src="img/cv-optimizer-demo.mp4" muted loop playsinline controls>
-                Your browser doesn't support embedded video. <a href="img/cv-optimizer-demo.mp4">Download the recording</a> instead.
-            </video>
-            <p class="case-visual-caption">A quick look at the working prototype: upload a CV, review suggestions, accept one, apply a template.</p>
         </div>
 
         <h2>4. Preventing AI hallucination</h2>
         <div class="block">
-            <p>The AI can spot a skill in the job ad that's missing from the CV. Sometimes the evidence is already there, worded differently. Sometimes there is none, and adding it would be a lie the candidate has to defend in an interview. Some of the job seekers we surveyed had already been handed AI content about things they never did.</p>
-            <p>So suggestions are split by confidence. When one is grounded in the CV, one click accepts it. When it isn't, it appears in a separate list, is excluded from accept all, and the user has to add it themselves. The panel says: <em>"These may apply to you, we can't tell from your CV. Add only if it's true."</em></p>
-            <p>The trade-off is real. Those unevidenced suggestions are often the ones that would raise the match score most. We chose a CV the candidate can defend over a better number. A competitor will happily add them.</p>
-            <p>The frontend engineer set the prompt up so I could edit it directly, which meant I could change the product's behavior myself instead of filing a ticket. Three rules I wrote into it:</p>
-            <ul>
-                <li>Never invent. Use only what's in the CV or the job ad.</li>
-                <li>Suggest, don't rewrite. Change the smallest piece of text that does the job.</li>
-                <li>Explain in one plain sentence, no AI vocabulary. I also added a list of words to avoid because they sound too much like AI, like the em dash.</li>
-            </ul>
+            <p>Job seekers told us the AI tools they use kept adding skills or experience they didn't actually have. That was their biggest complaint. So ours had to avoid doing the same thing.</p>
+            <p>Our solution splits suggestions by confidence. When it's not sure a suggestion is backed by the CV, we add friction: it can't be auto-applied, the user has to check it and add it themselves.</p>
+            <a data-fancybox="cv-optimizer" href="img/cv_opti_flow.png"><img class="case-visual" src="img/cv_opti_flow.png" alt="Flowchart of the confidence-split suggestion flow: the AI compares a job ad requirement to the CV content, then asks if it's evidenced in the CV. If yes, the suggestion is grounded, shown in the main list, and included in Accept all. If no, it's unevidenced, shown in a separate list excluded from Accept all, and must be added manually. Auto-adding every match regardless of evidence was rejected for recreating the hallucination problem."></a>
+            <h3 class="case-jobs-title">Sounding like a person, not a bot</h3>
+            <p>The frontend engineer gave me access to the AI prompt, so I could edit it directly and see how it reacts. The rule that mattered most here was to explain everything in one plain sentence, no AI vocabulary. I added a list of banned words that sound too AI, the em dash included.</p>
         </div>
 
         <h2>5. Testing the prototype with real job seekers</h2>

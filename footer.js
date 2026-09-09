@@ -7,6 +7,7 @@
     const projectPath = window.location.pathname.includes('/projects/') ? '' : 'projects/';
     const homePath = window.location.pathname.includes('/projects/') ? '../index.html' : 'index.html';
     const caseStudies = [
+        ['CV Optimizer', projectPath + 'cv-optimizer.html'],
         ['Brand refresh', projectPath + 'jobs-brand-refresh.html'],
         ['Company profiles', projectPath + 'company2.html']
     ];
